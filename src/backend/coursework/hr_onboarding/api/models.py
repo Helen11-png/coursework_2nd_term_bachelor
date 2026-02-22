@@ -26,6 +26,18 @@ class Request(models.Model):
     def __str__(self):
         return f"Заявка {self.id} от {self.employee.full_name}"
 
+    def create_approval_steps(self):
+        # Получаем все шаги маршрута для этого типа заявки
+        routes=Route.objects.filter(request_type=self.request_type).order_by('step_number')
+        for route in routes:
+            ApprovalStep.objects.create(
+                request=self,
+                step_number=route.step_number,
+                role=route.role,
+                sla_days=route.sla_days,
+                status='pending'
+            )
+
 
 class Route(models.Model):
     ROLES = [
@@ -63,3 +75,25 @@ class ApprovalHistory(models.Model):
 
     def __str__(self):
         return f"{self.request} - шаг {self.step_number}: {self.decision}"
+
+
+class ApprovalStep(models.Model):
+    STATUS_CHOICES = [
+        ('pending', 'Ожидает'),
+        ('approved', 'Утверждено'),
+        ('rejected', 'Отклонено'),
+    ]
+
+    request = models.ForeignKey(Request, on_delete=models.CASCADE, related_name='steps')
+    step_number = models.IntegerField()
+    role = models.CharField(max_length=50)  # manager, hr
+    approver = models.ForeignKey(Employee, on_delete=models.SET_NULL, null=True)
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
+    assigned_at = models.DateTimeField(auto_now_add=True)
+    acted_at = models.DateTimeField(null=True, blank=True)
+    comment = models.TextField(blank=True)
+    sla_days = models.IntegerField(default=1)
+
+    class Meta:
+        ordering = ['request', 'step_number']
+        unique_together = ['request', 'step_number']
