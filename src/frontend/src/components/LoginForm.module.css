@@ -1,0 +1,23 @@
+.form{
+    max-width: 424px;
+    margin: 0 auto;
+    padding: 40px 40px;
+    background-color: #FCFCFF;
+    border-radius: 15px;
+    box-shadow: 0  16px 30px rgba(177, 169, 169, 0.819);
+}
+.title {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 33px;
+  font-size: 23px;
+  color: #222222;
+}
+.generalError {
+  background-color: #f8d7da;
+  color: #dc3545;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  text-align: center;
+}
