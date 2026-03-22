@@ -1,0 +1,19 @@
+.button{
+    padding: 13px 153px;
+    border: none;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    width: 100%;
+    background-color: #4375E2;
+    color: #fff;
+}
+.primary {
+  background-color: #4375E2;
+  color: #fff;
+}
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
