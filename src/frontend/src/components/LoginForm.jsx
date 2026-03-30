@@ -14,7 +14,8 @@ function LoginForm({ onSubmit }) {
   const roleOptions = [
     { value: 'employee', label: 'Сотрудник' },
     { value: 'hr', label: 'HR-менеджер' },
-    { value: 'admin', label: 'Администратор' }
+    { value: 'admin', label: 'Администратор' },
+    { value: 'manager', label: 'Руководитель' }
   ];
   const handleChange = (e) => {
     const { name, value } = e.target;
