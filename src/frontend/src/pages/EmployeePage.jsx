@@ -16,6 +16,13 @@ function EmployeePage() {
     const employeeId = currentUser.id;
     console.log('👤 Текущий пользователь:', currentUser);
     console.log('🆔 ID сотрудника для заявки:', employeeId);
+    const getPositionDisplay = () => {
+        if (currentUser.position) {
+            return currentUser.position;
+        }
+        return 'Сотрудник';
+    };
+
 
     useEffect(() => {
         // Загружаем заявки ТЕКУЩЕГО сотрудника
@@ -99,6 +106,14 @@ function EmployeePage() {
 
     return (
         <div className={styles.container}>
+            {/* Информация о пользователе */}
+            <div className={styles.userInfo}>
+                <p>
+                    Вы вошли как: <strong>{currentUser.full_name}</strong>
+                    {currentUser.position && ` (${getPositionDisplay()})`}
+                    {currentUser.department && ` · ${currentUser.department}`}
+                </p>
+            </div>
             <div className={styles.header}>
                 <Button onClick={() => setIsModalOpen(true)}>Добавить заявление</Button>
             </div>

@@ -22,7 +22,7 @@ function RequestForm({onSubmit, onCancel}){
 
     const departmentOptions = [
     { value: 'it', label: 'IT' },
-    { value: 'hr', label: 'HR' },
+    { value: 'administrative_department', label: 'Административный отдел' },
     { value: 'sales', label: 'Продажи' }];
 
     const handleChange = (e) =>{
