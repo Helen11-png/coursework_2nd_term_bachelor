@@ -62,7 +62,7 @@ class Command(BaseCommand):
         sales_manager, created_sales = Employee.objects.get_or_create(
             tab_number='020',
             defaults={
-                'full_name': 'Ольга Менеджер',
+                'full_name': 'Ольга Лебедева',
                 'department': 'Sales',
                 'position': 'Руководитель Sales',
                 'role': 'manager'
@@ -73,9 +73,9 @@ class Command(BaseCommand):
         hr_manager, created_hr = Employee.objects.get_or_create(
             tab_number='030',
             defaults={
-                'full_name': 'Анна HR-руководитель',
-                'department': 'HR',
-                'position': 'Руководитель HR',
+                'full_name': 'Анна Волкова',
+                'department': 'Административный отдел',
+                'position': 'Руководитель административного отдела',
                 'role': 'manager'
             }
         )
