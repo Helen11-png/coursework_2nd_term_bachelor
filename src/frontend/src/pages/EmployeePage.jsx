@@ -5,57 +5,97 @@ import Modal from '../components/Modal';
 import RequestForm from '../components/RequestForm';
 import styles from './EmployeePage.module.css';
 
-const mockRequests = [ //*это для проверки таблицы*//
-  {
-    id: 1,
-    type: 'Отпуск',
-    status: 'approved',
-    updatedAt: '2026-03-15',
-    createdAt: '2026-03-10',
-  },
-  {
-    id: 2,
-    type: 'Командировка',
-    status: 'pending',
-    updatedAt: '2026-03-14',
-    createdAt: '2026-03-12',
-  },
-];
-
-function EmployeePage(){
+function EmployeePage() {
     const [requests, setRequests] = useState([]);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    
+    // Получаем ID текущего пользователя из localStorage
+    const currentUser = JSON.parse(localStorage.getItem('user') || '{}');
+    const employeeId = currentUser.id;
+    console.log('👤 Текущий пользователь:', currentUser);
+    console.log('🆔 ID сотрудника для заявки:', employeeId);
 
-      // Загружаем заявления при монтировании страницы
     useEffect(() => {
-    // В будущем здесь будет fetch('/api/employee/requests')
-        setRequests(mockRequests);
-    }, []);
+        // Загружаем заявки ТЕКУЩЕГО сотрудника
+        fetch(`/api/my-requests/?employee_id=${employeeId}`)
+            .then(res => {
+                if (!res.ok) throw new Error('Ошибка загрузки');
+                return res.json();
+            })
+            .then(data => {
+                const formattedRequests = data.map(req => ({
+                    id: req.id,
+                    type: req.request_type === 'vacation' ? 'Отпуск' : 'Командировка',
+                    status: req.status === 'draft' ? 'Черновик' : 
+                            req.status === 'submitted' ? 'На рассмотрении' :
+                            req.status === 'in_approval' ? 'Утверждено руководителем' :
+                            req.status === 'approved' ? 'Утверждено' : 'Отклонено',
+                    createdAt: req.created_at.slice(0, 10),
+                    updatedAt: req.updated_at?.slice(0, 10) || req.created_at.slice(0, 10),
+                }));
+                setRequests(formattedRequests);
+                setLoading(false);
+            })
+            .catch(err => {
+                console.error(err);
+                setError(err.message);
+                setLoading(false);
+            });
+    }, [employeeId]);
 
     const handleAddRequest = async (formData) => {
-    // Имитация отправки на сервер
-        console.log('Новое заявление:', formData);
-        await new Promise(resolve => setTimeout(resolve, 1000));
-
-    // Создаём объект нового заявления (сервер вернёт подобное)
-        const typeMap = {
-            vacation: 'Отпуск',
-            mission: 'Командировка',
-        };
-    
-        const newRequest = {
-            id: Date.now(),
-            type: typeMap[formData.requestType],
-            status: 'pending',
-            updatedAt: new Date().toISOString().slice(0, 10),
-            createdAt: new Date().toISOString().slice(0, 10),
-        };
-        setRequests(prev => [newRequest, ...prev]);
-        setIsModalOpen(false);
+        console.log('📤 Отправляем данные:', formData);
+        console.log('👤 Текущий сотрудник ID:', employeeId);
+        
+        try {
+            const response = await fetch('/api/requests/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    employee: employeeId,  
+                    request_type: formData.requestType === 'mission' ? 'business_trip' : 'vacation',
+                    status: 'submitted',
+                    start_date: formData.startDate,
+                    end_date: formData.endDate,
+                    comment: ''
+                })
+            });
+            
+            if (!response.ok) {
+                const errorData = await response.json();
+                console.error('❌ Ошибка сервера:', errorData);
+                throw new Error('Ошибка отправки');
+            }
+            
+            const newRequest = await response.json();
+            console.log('✅ Заявка создана:', newRequest);
+            
+            // Добавляем в таблицу
+            const formattedRequest = {
+                id: newRequest.id,
+                type: newRequest.request_type === 'vacation' ? 'Отпуск' : 'Командировка',
+                status: 'На рассмотрении',
+                createdAt: new Date().toISOString().slice(0, 10),
+                updatedAt: new Date().toISOString().slice(0, 10),
+            };
+            
+            setRequests(prev => [formattedRequest, ...prev]);
+            setIsModalOpen(false);
+            
+        } catch (err) {
+            console.error('❌ Ошибка:', err);
+            alert('Ошибка при создании заявки');
+        }
     };
+    
     const handleCancel = () => {
         setIsModalOpen(false);
     };
+
+    if (loading) return <div>Загрузка...</div>;
+    if (error) return <div>Ошибка: {error}</div>;
 
     return (
         <div className={styles.container}>
@@ -67,12 +107,7 @@ function EmployeePage(){
                 <RequestForm onSubmit={handleAddRequest} onCancel={handleCancel} />
             </Modal>
         </div>
-  );
+    );
 }
 
 export default EmployeePage;
-
-
-
-
-

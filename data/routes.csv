@@ -1,0 +1,5 @@
+type,step_no,role,sla_days,step_description
+vacation,1,manager,2,Шаг 1: manager
+vacation,2,hr,1,Шаг 2: hr
+business_trip,1,manager,3,Шаг 1: manager
+business_trip,2,hr,2,Шаг 2: hr

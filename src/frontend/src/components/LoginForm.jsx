@@ -1,66 +1,76 @@
 import { useState } from 'react';
-import Input from './Input';
-import Select from './Select';
-import Button from './Button';
 import styles from './LoginForm.module.css';
-function LoginForm({ onSubmit }) {
+import Select from './Select';
+import Input from './Input';
+import Button from './Button';
+
+function LoginForm({ onSubmit, loading, error: externalError }) {
   const [formData, setFormData] = useState({
-    role: '',
+    role: 'employee',
     email: '',
-    password: ''
+    password: '',
+    tab_number: ''
   });
+  
   const [errors, setErrors] = useState({});
-  const [isLoading, setIsLoading] = useState(false);
+
   const roleOptions = [
     { value: 'employee', label: 'Сотрудник' },
-    { value: 'hr', label: 'HR-менеджер' },
-    { value: 'admin', label: 'Администратор' },
-    { value: 'manager', label: 'Руководитель' }
+    { value: 'manager', label: 'Руководитель' },
+    { value: 'hr', label: 'HR-специалист' }
   ];
+
+  const isFormValid = () => {
+    const newErrors = {};
+    
+    if (!formData.tab_number) {
+      newErrors.tab_number = 'Введите табельный номер';
+    }
+    
+    if (!formData.email) {
+      newErrors.email = 'Введите email';
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = 'Некорректный email';
+    }
+    
+    if (!formData.password) {
+      newErrors.password = 'Введите пароль';
+    }
+    
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    if (!isFormValid()) return;
+    
+    const loginData = {
+      tab_number: formData.tab_number,
+      email: formData.email,
+      password: formData.password,
+      role: formData.role
+    };
+    
+    onSubmit(loginData);
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
     if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: '' }));
     }
   };
-  const validate = () => {
-    const newErrors = {};
-    if (!formData.role) newErrors.role = 'Выберите должность';
-    if (!formData.email) {
-      newErrors.email = 'Email обязателен';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'Некорректный email';
-    }
-    if (!formData.password) {
-      newErrors.password = 'Пароль обязателен';
-    }
-    return newErrors;
-  };
-  const isFormValid = () => {
-    return Object.values(formData).every(value => value.trim() !== '');
-  };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const validationErrors = validate();
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      return;
-    }
-    
-    setIsLoading(true);
-    try {
-      await onSubmit(formData);
-    } catch (error) {
-      setErrors({ general: 'Ошибка входа. Проверьте данные.' });
-    } finally {
-      setIsLoading(false);
-    }
-  };
-    return (
+  return (
     <form onSubmit={handleSubmit} className={styles.form}>
       <h2 className={styles.title}>Авторизация</h2>
+      {externalError && <p className={styles.generalError}>{externalError}</p>}
       {errors.general && <p className={styles.generalError}>{errors.general}</p>}
 
       <Select
@@ -71,25 +81,38 @@ function LoginForm({ onSubmit }) {
         placeholder="Выберите должность"
         error={errors.role}
       />
-      <Input
-      type="email"
-      name="email"
-      value={formData.email}
-      onChange={handleChange}
-      placeholder="Введите email"
-      error={errors.email}
-    />
 
-    <Input
-      type="password"
-      name="password"
-      value={formData.password}
-      onChange={handleChange}
-      placeholder="Введите пароль"
-      error={errors.password}
-    />
-          <Button type="submit" disabled={!isFormValid() || isLoading}>
-        {isLoading ? 'Вход...' : 'Войти'}
+      <Input
+        type="email"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+        placeholder="Email"
+        error={errors.email}
+      />
+
+      <Input
+        type="password"
+        name="password"
+        value={formData.password}
+        onChange={handleChange}
+        placeholder="Пароль"
+        error={errors.password}
+      />
+      <Input
+        type="text"
+        name="tab_number"
+        value={formData.tab_number}
+        onChange={handleChange}
+        placeholder="Табельный номер (например, 001, 010, 003)"
+        error={errors.tab_number}
+      />
+
+      <Button 
+        type="submit" 
+        disabled={loading}
+      >
+        {loading ? 'Вход...' : 'Войти'}
       </Button>
     </form>
   );

@@ -1,0 +1,53 @@
+req_id,tab_no,type,status,created_at,approved_at,route_type,current_step,current_approver_tab,is_overdue
+22,001,vacation,approved,2026-04-05 10:49:33,2026-04-05 12:12:00,vacation,,,N
+23,002,business_trip,rejected,2026-04-05 10:49:33,,business_trip,,,N
+24,003,vacation,approved,2026-04-05 10:49:33,2026-02-22 22:59:04,vacation,,,N
+25,001,business_trip,approved,2026-04-05 10:50:50,2026-04-05 14:35:48,business_trip,,,N
+26,001,vacation,rejected,2026-04-05 10:54:49,,vacation,,,N
+27,002,business_trip,rejected,2026-04-05 10:54:49,,business_trip,,,N
+28,003,vacation,approved,2026-04-05 10:54:49,2026-02-22 22:59:04,vacation,,,N
+29,001,vacation,rejected,2026-04-05 11:27:05,,vacation,,,N
+30,002,business_trip,rejected,2026-04-05 11:27:05,,business_trip,,,N
+31,003,vacation,approved,2026-04-05 11:27:05,2026-02-22 22:59:04,vacation,,,N
+32,001,vacation,rejected,2026-04-05 11:27:32,,vacation,,,N
+33,001,vacation,rejected,2026-04-05 11:27:55,,vacation,,,N
+34,001,vacation,in_approval,2026-04-05 11:35:44,,vacation,,,N
+35,008,vacation,in_approval,2026-04-05 11:38:02,,vacation,,,N
+36,008,vacation,in_approval,2026-04-05 11:38:22,,vacation,,,N
+37,008,vacation,rejected,2026-04-05 11:46:09,,vacation,,,N
+38,008,business_trip,approved,2026-04-05 11:49:31,2026-04-05 11:49:53,business_trip,,,N
+39,003,vacation,in_approval,2026-04-05 12:07:28,,vacation,,,N
+40,003,business_trip,in_approval,2026-04-05 12:10:24,,business_trip,,,N
+41,008,business_trip,in_approval,2026-04-05 12:10:53,,business_trip,,,N
+42,001,vacation,in_approval,2026-04-05 12:11:29,,vacation,,,N
+43,hr_001,business_trip,submitted,2026-04-05 12:13:21,,business_trip,,,N
+44,010,vacation,submitted,2026-04-05 12:17:29,,vacation,,,N
+45,010,vacation,submitted,2026-04-05 12:19:00,,vacation,,,N
+46,010,business_trip,submitted,2026-04-05 12:20:44,,business_trip,,,N
+47,010,vacation,submitted,2026-04-05 12:22:12,,vacation,,,N
+48,010,vacation,submitted,2026-04-05 12:23:55,,vacation,,,N
+49,001,business_trip,in_approval,2026-04-05 12:27:16,,business_trip,,,N
+50,010,vacation,in_approval,2026-04-05 12:27:37,,vacation,,,N
+51,001,vacation,in_approval,2026-04-05 12:28:53,,vacation,,,N
+52,002,business_trip,in_approval,2026-04-05 12:28:53,,business_trip,,,N
+53,003,vacation,approved,2026-04-05 12:28:53,2026-02-22 22:59:04,vacation,,,N
+54,001,vacation,in_approval,2026-04-05 12:29:27,,vacation,,,N
+55,002,business_trip,in_approval,2026-04-05 12:29:27,,business_trip,,,N
+56,003,vacation,approved,2026-04-05 12:29:28,2026-02-22 22:59:04,vacation,,,N
+57,001,vacation,in_approval,2026-04-05 12:30:17,,vacation,,,N
+58,002,business_trip,in_approval,2026-04-05 12:30:17,,business_trip,,,N
+59,003,vacation,approved,2026-04-05 12:30:17,2026-02-22 22:59:04,vacation,,,N
+60,001,vacation,rejected,2026-04-05 12:40:04,,vacation,,,N
+61,002,business_trip,in_approval,2026-04-05 12:40:05,,business_trip,,,N
+62,003,vacation,approved,2026-04-05 12:40:05,2026-02-22 22:59:04,vacation,,,N
+63,030,business_trip,in_approval,2026-04-05 12:43:26,,business_trip,,,N
+64,001,vacation,in_approval,2026-04-05 14:32:13,,vacation,,,N
+65,002,vacation,rejected,2026-04-05 14:32:48,,vacation,,,N
+66,003,business_trip,in_approval,2026-04-05 14:33:14,,business_trip,,,N
+67,010,vacation,in_approval,2026-04-05 14:33:49,,vacation,,,N
+68,020,business_trip,in_approval,2026-04-05 14:34:51,,business_trip,,,N
+69,030,business_trip,in_approval,2026-04-05 14:35:26,,business_trip,,,N
+70,008,vacation,approved,2026-04-05 14:36:33,2026-04-05 14:37:04,vacation,,,N
+71,001,vacation,submitted,2026-04-05 14:37:54,,vacation,,,N
+72,002,business_trip,submitted,2026-04-05 14:37:54,,business_trip,,,N
+73,003,vacation,approved,2026-04-05 14:37:54,2026-02-22 22:59:04,vacation,,,N

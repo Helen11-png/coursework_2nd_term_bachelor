@@ -1,97 +1,146 @@
-import { useState, useEffect } from 'react';      //не работает
-import { useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useLocation, Link } from 'react-router-dom';
 import ManagerRequestTable from '../components/ManagerRequestTable';
 import styles from './ManagerPage.module.css';
 
-const mockRequests = [
-  {
-    id: 1,
-    employee: 'Иванов Иван',
-    department: 'HR',
-    type: 'Отпуск',
-    startDate: '2026-05-10',
-    endDate: '2026-05-20',
-    status: 'pending',
-  },
-  {
-    id: 1,
-    employee: 'Эдуард Эдиков',
-    department: 'IT',
-    type: 'Отпуск',
-    startDate: '2026-05-10',
-    endDate: '2026-05-31',
-    status: 'approved_by_hr',
-  },
-  {
-    id: 2,
-    employee: 'Петров Петр',
-    department: 'Продажи',
-    type: 'Командировка',
-    startDate: '2026-06-01',
-    endDate: '2026-06-15',
-    status: 'approved_by_manager'}]
-
-function ManagerPage(){
+function ManagerPage() {
     const location = useLocation();
-    const role = location.pathname === '/.hr'? 'hr': 'manager';
-
+    const role = location.pathname === '/hr' ? 'hr' : 'manager';
+    const currentUser = JSON.parse(localStorage.getItem('user') || '{}');
+    const managerId = currentUser.id || 10;
+    
     const [requests, setRequests] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    // Функция для получения заголовка в зависимости от роли и отдела
+    const getPageTitle = () => {
+        if (role === 'hr') {
+            return 'Заявления на согласование (HR)';
+        }
+        
+        // Для менеджера показываем его отдел
+        const department = currentUser.department || 'отдела';
+        return `Заявления на рассмотрение (${department})`;
+    };
 
     useEffect(() => {
-    // Имитация загрузки данных
-        setTimeout(() => {
-            setRequests(mockRequests);
-            setIsLoading(false);
-        }, 500);
-    }, []);
+        const apiUrl = role === 'hr' 
+            ? '/api/hr-requests/' 
+            : `/api/manager-requests/?manager_id=${managerId}`;
+        
+        fetch(apiUrl)
+            .then(res => {
+                if (!res.ok) throw new Error('Ошибка загрузки');
+                return res.json();
+            })
+            .then(data => {
+                console.log('📋 Получены заявки:', data);
+                
+                const formattedRequests = data.map(req => ({
+                    id: req.id,
+                    employee: req.employee_name,
+                    department: req.employee_department || '—',
+                    type: req.request_type === 'vacation' ? 'Отпуск' : 'Командировка',
+                    startDate: req.start_date || req.startDate || '—',  // ← пробуем оба варианта
+                    endDate: req.end_date || req.endDate || '—',   
+                    status: req.status
+                }));
+                
+                setRequests(formattedRequests);
+                setIsLoading(false);
+            })
+            .catch(err => {
+                console.error('❌ Ошибка:', err);
+                setError(err.message);
+                setIsLoading(false);
+            });
+    }, [role, managerId]);
 
     const filteredRequests = role === 'hr'
-        ? requests.filter(req => req.status === 'approved_by_manager')
-        : requests.filter(req => req.status === 'pending');
+        ? requests.filter(req => req.status === 'in_approval')
+        : requests.filter(req => req.status === 'submitted');
 
-    const handleApprove = (id) => {
-        console.log('handleApprove вызвана с id:', id);
-        console.log('текущая роль:', role);
-        setRequests(prev => {
-            prev.map(req => {
+    const handleApprove = async (id) => {
+        console.log('✅ handleApprove вызвана с id:', id, 'роль:', role);
+        
+        try {
+            const response = await fetch(`/api/requests/${id}/approve/`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ role: role })
+            });
+            
+            if (!response.ok) throw new Error('Ошибка утверждения');
+            
+            setRequests(prev => prev.map(req => {
                 if (req.id !== id) return req;
-                if (role === 'manager' && req.status === 'pending') {
-                    return { ...req, status: 'approved_by_manager' };
+                
+                if (role === 'manager' && req.status === 'submitted') {
+                    return { ...req, status: 'in_approval' };
                 }
-                if (role === 'hr' && req.status === 'approved_by_manager') {
-                    return { ...req, status: 'approved_by_hr' };
+                if (role === 'hr' && req.status === 'in_approval') {
+                    return { ...req, status: 'approved' };
                 }
                 return req;
-            });
-    });
+            }));
+            
+        } catch (err) {
+            console.error('❌ Ошибка:', err);
+            alert('Ошибка при утверждении заявки');
+        }
     };
 
-    const handleReject = (id) => {
-        setRequests(prev =>
-            prev.map(req =>
+    const handleReject = async (id) => {
+        console.log('❌ handleReject вызвана с id:', id);
+        
+        try {
+            const response = await fetch(`/api/requests/${id}/reject/`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
+            });
+            
+            if (!response.ok) throw new Error('Ошибка отклонения');
+            
+            setRequests(prev => prev.map(req =>
                 req.id === id ? { ...req, status: 'rejected' } : req
-            )
-        );
+            ));
+            
+        } catch (err) {
+            console.error('❌ Ошибка:', err);
+            alert('Ошибка при отклонении заявки');
+        }
     };
+
+    if (isLoading) return <div>Загрузка...</div>;
+    if (error) return <div>Ошибка: {error}</div>;
 
     return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>
-        {role === 'hr' ? 'Заявления на согласование' : 'Заявления на рассмотрение'}
-      </h1>
-      <ManagerRequestTable
-        requests={filteredRequests}
-        onApprove={handleApprove}
-        onReject={handleReject}
-        showActions={true}
-        role={role}
-      />
-    </div>
-  );
+        <div className={styles.container}>
+            {/* Информация о пользователе */}
+            <div className={styles.userInfo}>
+                <p>
+                    Вы вошли как: <strong>{currentUser.full_name}</strong>
+                    {currentUser.department && ` (${currentUser.department})`}
+                </p>
+                <Link to="/employee" className={styles.myRequestsLink}>
+                    📋 Мои заявки (как сотрудник)
+                </Link>
+            </div>
+            
+            <h1 className={styles.title}>
+                {getPageTitle()}
+            </h1>
+            
+            <ManagerRequestTable
+                requests={filteredRequests}
+                onApprove={handleApprove}
+                onReject={handleReject}
+                showActions={true}
+                role={role}
+            />
+        </div>
+    );
 }
 
 export default ManagerPage;
-
-
-    

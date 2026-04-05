@@ -8,10 +8,14 @@ class Request(models.Model):
         ('vacation', 'Отпуск'),
         ('business_trip', 'Командировка'),
     ]
-
+    start_date = models.DateField(null=True, blank=True)
+    end_date = models.DateField(null=True, blank=True)
+    comment = models.TextField(blank=True)
+    updated_at = models.DateTimeField(auto_now=True)
     STATUSES = [
         ('draft', 'Черновик'),
         ('submitted', 'Отправлено'),
+        ('pending', 'На рассмотрении'),
         ('in_approval', 'На согласовании'),
         ('approved', 'Утверждено'),
         ('rejected', 'Отклонено'),
