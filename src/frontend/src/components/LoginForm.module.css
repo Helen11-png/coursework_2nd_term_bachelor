@@ -21,3 +21,33 @@
   margin-bottom: 24px;
   text-align: center;
 }
+/* Общие стили для всех полей ввода */
+.form input,
+.form textarea,
+.form select {
+    width: 100%;           /* Одинаковая ширина на всю ширину родителя */
+    padding: 12px 16px;    /* Одинаковые внутренние отступы */
+    font-size: 16px;       /* Одинаковый размер шрифта */
+    font-family: inherit;  /* Наследует шрифт от родителя */
+    border: 1px solid #ccc; /* Одинаковая рамка */
+    border-radius: 8px;     /* Одинаковое скругление углов */
+    background-color: #fff;
+    box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
+    margin-bottom: 16px;    /* Одинаковый отступ снизу (если нужно) */
+    transition: border-color 0.2s ease;
+}
+
+/* Стили при фокусе (клике на поле) */
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Если хотите, чтобы textarea не растягивался по высоте */
+.form textarea {
+    resize: vertical;      /* Можно менять высоту, но не ширину */
+    min-height: 100px;
+}

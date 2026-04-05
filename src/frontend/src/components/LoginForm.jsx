@@ -104,7 +104,7 @@ function LoginForm({ onSubmit, loading, error: externalError }) {
         name="tab_number"
         value={formData.tab_number}
         onChange={handleChange}
-        placeholder="Табельный номер (например, 001, 010, 003)"
+        placeholder="Табельный номер (например, 001, 002, 003)"
         error={errors.tab_number}
       />
 
