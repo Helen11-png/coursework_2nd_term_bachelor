@@ -1,21 +1,24 @@
 import { useState } from 'react';
-import styles from './LoginForm.module.css';
-import Select from './Select';
 import Input from './Input';
 import Button from './Button';
+import styles from './LoginForm.module.css';
 
 function LoginForm({ onSubmit, loading, errorMessage }) {
   const [formData, setFormData] = useState({
-    role: 'employee',
     email: '',
     password: '',
     tab_number: ''
   });
-  
   const [errors, setErrors] = useState({});
-
   
-
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+    if (errors[name]) {
+      setErrors(prev => ({ ...prev, [name]: '' }));
+    }
+  };
+  
   const isFormValid = () => {
     const newErrors = {};
     
@@ -37,7 +40,7 @@ function LoginForm({ onSubmit, loading, errorMessage }) {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     if (!isFormValid()) return;
@@ -45,44 +48,28 @@ function LoginForm({ onSubmit, loading, errorMessage }) {
     const loginData = {
       tab_number: formData.tab_number,
       email: formData.email,
-      password: formData.password,
-      role: formData.role
+      password: formData.password
     };
     
     onSubmit(loginData);
   };
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-    if (errors[name]) {
-      setErrors(prev => ({ ...prev, [name]: '' }));
-    }
-  };
-
+  
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
       <h2 className={styles.title}>Авторизация</h2>
       
-      {/* Красивый баннер ошибки вместо обычного текста */}
       {errorMessage && (
         <div className={styles.errorBanner}>
-          <span className={styles.errorIcon}>⚠️</span>
           <span className={styles.errorText}>{errorMessage}</span>
         </div>
       )}
-
- 
-
+      
       <Input
         type="email"
         name="email"
         value={formData.email}
         onChange={handleChange}
-        placeholder="Email"
+        placeholder="Введите email"
         error={errors.email}
       />
 
@@ -91,7 +78,7 @@ function LoginForm({ onSubmit, loading, errorMessage }) {
         name="password"
         value={formData.password}
         onChange={handleChange}
-        placeholder="Пароль"
+        placeholder="Введите пароль"
         error={errors.password}
       />
 
@@ -103,11 +90,8 @@ function LoginForm({ onSubmit, loading, errorMessage }) {
         placeholder="Табельный номер (например, 001, 002, 003)"
         error={errors.tab_number}
       />
-
-      <Button 
-        type="submit" 
-        disabled={loading}
-      >
+      
+      <Button type="submit" disabled={loading}>
         {loading ? 'Вход...' : 'Войти'}
       </Button>
     </form>

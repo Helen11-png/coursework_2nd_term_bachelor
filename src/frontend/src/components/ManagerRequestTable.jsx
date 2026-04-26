@@ -1,9 +1,14 @@
 import { useState } from 'react';
-import styles from './ManagerRequestTable.module.css';
+import styles from './ManagerRequestTable.module.css'; 
 
-function ManagerRequestTable({ requests, onApprove, onReject, showActions, role }) {
+function ManagerRequestTable({requests, onApprove, onReject, showActions, role}){
     const [rejectModal, setRejectModal] = useState({ isOpen: false, requestId: null, comment: '' });
     
+    const formatDate = (dateStr) => {
+        const [year, month, day] = dateStr.split('-');
+        return `${day}.${month}.${year}`;
+    };    
+
     const getStatusText = (status) => {
         const statusMap = {
             'submitted': 'На рассмотрении',
@@ -30,54 +35,64 @@ function ManagerRequestTable({ requests, onApprove, onReject, showActions, role 
         }
     };
 
-    return (
+    return(
         <>
-            <table className={styles.table}>
-                <thead>
-                    <tr>
-                        <th>Сотрудник</th>
-                        <th>Отдел</th>
-                        <th>Тип заявления</th>
-                        <th>Даты проведения</th>
-                        <th>Статус</th>
-                        {showActions && <th>Действия</th>}
-                    </tr>
-                </thead>
-                <tbody>
-                    {requests.map((req) => (
-                        <tr key={req.id}>
-                            <td>{req.employee}</td>
-                            <td>{req.department}</td>
-                            <td>{req.type}</td>
-                            <td>{req.startDate} – {req.endDate}</td>
-                            <td className={styles[req.status] || ''}>
-                                {getStatusText(req.status)}
-                                {req.status === 'rejected' && req.rejection_comment && (
-                                    <div className={styles.rejectionComment}>
-                                        Причина: {req.rejection_comment}
-                                    </div>
-                                )}
-                            </td>
-                            {showActions && (req.status === 'submitted' || req.status === 'in_approval') && (
-                                <td className={styles.actions}>
-                                    <button 
-                                        className={styles.approveBtn}
-                                        onClick={() => onApprove(req.id)}
-                                    >
-                                        Одобрить
-                                    </button>
-                                    <button 
-                                        className={styles.rejectBtn}
-                                        onClick={() => openRejectModal(req.id)}
-                                    >
-                                        Отклонить
-                                    </button>
-                                </td>
-                            )}
+            <div className={styles.tableWrapper}>
+                <table className={styles.table}>
+                    <thead>
+                        <tr>
+                            <th>Сотрудник</th>
+                            <th>Отдел</th>
+                            <th>Тип заявления</th>
+                            <th>Даты проведения</th>
+                            <th>Статус</th>
+                            {showActions && <th>Действия</th>}
                         </tr>
-                    ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        {requests.length === 0 ? (
+                            <tr>
+                                <td colSpan={showActions ? 6 : 5} className={styles.empty}>
+                                    Нет заявлений
+                                </td>
+                            </tr>
+                        ) : (
+                            requests.map((req) => (
+                                <tr key={req.id}>
+                                    <td>{req.employee}</td>
+                                    <td>{req.department}</td>
+                                    <td>{req.type}</td>
+                                    <td>{`${formatDate(req.startDate)} – ${formatDate(req.endDate)}`}</td>    
+                                    <td className={styles[req.status] || ''}>
+                                        {getStatusText(req.status)}
+                                        {req.status === 'rejected' && req.rejection_comment && (
+                                            <div className={styles.rejectionComment}>
+                                                Причина: {req.rejection_comment}
+                                            </div>
+                                        )}
+                                    </td>
+                                    {showActions && (req.status === 'submitted' || req.status === 'in_approval') && (
+                                        <td className={styles.actions}>
+                                            <button 
+                                                className={styles.approveBtn}
+                                                onClick={() => onApprove(req.id)}
+                                            >
+                                                Одобрить
+                                            </button>
+                                            <button 
+                                                className={styles.rejectBtn}
+                                                onClick={() => openRejectModal(req.id)}
+                                            >
+                                                Отклонить
+                                            </button>
+                                        </td>
+                                    )}
+                                </tr>
+                            ))
+                        )}
+                    </tbody>
+                </table>    
+            </div>
 
             {/* Модальное окно для комментария при отклонении */}
             {rejectModal.isOpen && (
