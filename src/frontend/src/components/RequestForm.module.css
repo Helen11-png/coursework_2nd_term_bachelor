@@ -151,3 +151,29 @@
     cursor: pointer;
     transition: all 0.2s ease;
 }
+/* Стили для readonly полей (информация о пользователе) */
+.readonlyField {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.readonlyLabel {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.readonlyValue {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    color: #333;
+    box-sizing: border-box;
+    cursor: default;
+}
