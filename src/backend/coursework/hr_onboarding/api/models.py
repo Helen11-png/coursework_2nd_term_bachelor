@@ -11,6 +11,7 @@ class Request(models.Model):
     start_date = models.DateField(null=True, blank=True)
     end_date = models.DateField(null=True, blank=True)
     comment = models.TextField(blank=True)
+    rejection_comment = models.TextField(blank=True, null=True)
     updated_at = models.DateTimeField(auto_now=True)
     STATUSES = [
         ('draft', 'Черновик'),

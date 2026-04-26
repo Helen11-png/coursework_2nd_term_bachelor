@@ -16,4 +16,4 @@ class RequestSerializer(serializers.ModelSerializer):
         model = Request
         fields = ['id', 'employee', 'employee_name', 'employee_department', 'request_type',
                   'status', 'created_at', 'approved_at', 'updated_at',
-                  'start_date', 'end_date', 'comment']
+                  'start_date', 'end_date', 'comment','rejection_comment']

@@ -224,24 +224,24 @@ def approve_request(request, pk):
 
     return Response({'status': 'ok'})
 
+
 @api_view(['POST'])
 def reject_request(request, pk):
-    """Отклонить заявку"""
+    """Отклонить заявку с комментарием"""
     try:
         req = Request.objects.get(pk=pk)
     except Request.DoesNotExist:
         return Response({'error': 'Заявка не найдена'}, status=404)
-
+    rejection_comment = request.data.get('rejection_comment', '')
     req.status = 'rejected'
+    req.rejection_comment = rejection_comment
     req.save()
-
-    # Обновляем текущий шаг
     current_step = req.steps.filter(status='pending').first()
     if current_step:
         current_step.status = 'rejected'
         current_step.acted_at = timezone.now()
+        current_step.comment = rejection_comment
         current_step.save()
-
     return Response({'status': 'ok'})
 
 
