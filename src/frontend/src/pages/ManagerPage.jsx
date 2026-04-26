@@ -13,13 +13,11 @@ function ManagerPage() {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    // Функция для получения заголовка в зависимости от роли и отдела
     const getPageTitle = () => {
         if (role === 'hr') {
             return 'Заявления на согласование (HR)';
         }
         
-        // Для менеджера показываем его отдел
         const department = currentUser.department || 'отдела';
         return `Заявления на рассмотрение (${department})`;
     };
@@ -42,9 +40,10 @@ function ManagerPage() {
                     employee: req.employee_name,
                     department: req.employee_department || '—',
                     type: req.request_type === 'vacation' ? 'Отпуск' : 'Командировка',
-                    startDate: req.start_date || req.startDate || '—',  // ← пробуем оба варианта
-                    endDate: req.end_date || req.endDate || '—',   
-                    status: req.status
+                    startDate: req.start_date || req.startDate || '—',
+                    endDate: req.end_date || req.endDate || '—',
+                    status: req.status,
+                    rejection_comment: req.rejection_comment
                 }));
                 
                 setRequests(formattedRequests);
@@ -91,19 +90,20 @@ function ManagerPage() {
         }
     };
 
-    const handleReject = async (id) => {
-        console.log('❌ handleReject вызвана с id:', id);
+    const handleReject = async (id, comment) => {
+        console.log('❌ handleReject вызвана с id:', id, 'комментарий:', comment);
         
         try {
             const response = await fetch(`/api/requests/${id}/reject/`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' }
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ rejection_comment: comment })
             });
             
             if (!response.ok) throw new Error('Ошибка отклонения');
             
             setRequests(prev => prev.map(req =>
-                req.id === id ? { ...req, status: 'rejected' } : req
+                req.id === id ? { ...req, status: 'rejected', rejection_comment: comment } : req
             ));
             
         } catch (err) {
@@ -117,14 +117,13 @@ function ManagerPage() {
 
     return (
         <div className={styles.container}>
-            {/* Информация о пользователе */}
             <div className={styles.userInfo}>
                 <p>
                     Вы вошли как: <strong>{currentUser.full_name}</strong>
                     {currentUser.department && ` (${currentUser.department})`}
                 </p>
                 <Link to="/employee" className={styles.myRequestsLink}>
-                    📋 Мои заявки (как сотрудник)
+                    Мои заявки (как сотрудник)
                 </Link>
             </div>
             
