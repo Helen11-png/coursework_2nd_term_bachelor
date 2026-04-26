@@ -19,41 +19,26 @@ function LoginPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           tab_number: formData.tab_number,
-          email: formData.email,
-          password: formData.password,
-          role: formData.role
+          password: formData.password
         })
       });
       
-      const textResponse = await response.text();
-      console.log('📨 Сырой ответ от сервера:', textResponse);
-      
-      if (!textResponse || textResponse.trim() === '') {
-        throw new Error('Сервер вернул пустой ответ');
-      }
-      
-      let userData;
-      try {
-        userData = JSON.parse(textResponse);
-      } catch (parseError) {
-        console.error('❌ Ошибка парсинга JSON:', parseError);
-        throw new Error('Сервер вернул неверный формат данных');
-      }
+      const data = await response.json();
       
       if (!response.ok) {
-        throw new Error(userData.error || 'Ошибка входа');
+        throw new Error(data.error || 'Ошибка входа');
       }
       
-      console.log('✅ Успешный вход:', userData);
+      console.log('✅ Успешный вход:', data);
       
-      localStorage.setItem('user', JSON.stringify(userData));
+      localStorage.setItem('user', JSON.stringify(data));
       
-      // Перенаправляем в зависимости от роли
-      if (userData.role === 'employee') {
+      // Перенаправляем в зависимости от роли из базы данных
+      if (data.role === 'employee') {
         navigate('/employee');
-      } else if (userData.role === 'manager') {
+      } else if (data.role === 'manager') {
         navigate('/manager');
-      } else if (userData.role === 'hr') {
+      } else if (data.role === 'hr') {
         navigate('/hr');
       } else {
         navigate('/employee');
@@ -69,8 +54,11 @@ function LoginPage() {
 
   return (
     <div className={styles.page}>
-      {error && <div className={styles.error}>{error}</div>}
-      <LoginForm onSubmit={handleLogin} loading={loading} />
+      <LoginForm 
+        onSubmit={handleLogin} 
+        loading={loading} 
+        errorMessage={error}
+      />
     </div>
   );
 }

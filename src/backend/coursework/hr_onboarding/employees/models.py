@@ -9,6 +9,7 @@ class Employee(models.Model):
     ]
     role = models.CharField(max_length=20, choices=ROLE_CHOICES, default='employee')
     tab_number = models.CharField(max_length=20, unique=True)
+    password = models.CharField(max_length=128, blank=True, default='')
     full_name = models.CharField(max_length=100)
     department = models.CharField(max_length=100)
     position = models.CharField(max_length=100)

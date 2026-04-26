@@ -247,10 +247,11 @@ def reject_request(request, pk):
 
 @api_view(['POST'])
 def login(request):
-    """Вход пользователя по табельному номеру"""
+    """Вход пользователя по табельному номеру и паролю"""
     print("📨 Данные входа:", request.data)
 
     tab_number = request.data.get('tab_number')
+    password = request.data.get('password')
 
     if not tab_number:
         return Response(
@@ -258,10 +259,21 @@ def login(request):
             status=status.HTTP_400_BAD_REQUEST
         )
 
+    if not password:
+        return Response(
+            {'error': 'Пароль обязателен'},
+            status=status.HTTP_400_BAD_REQUEST
+        )
+
     try:
         employee = Employee.objects.get(tab_number=tab_number)
         print(f"✅ Найден сотрудник: {employee.full_name}, роль: {employee.role}, ID: {employee.id}")
-
+        if employee.password != password:
+            print(f"❌ Неверный пароль для {employee.full_name}")
+            return Response(
+                {'error': 'Неверный пароль'},
+                status=status.HTTP_401_UNAUTHORIZED
+            )
         response_data = {
             'id': employee.id,
             'tab_number': employee.tab_number,

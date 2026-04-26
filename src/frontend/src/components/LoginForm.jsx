@@ -4,7 +4,7 @@ import Select from './Select';
 import Input from './Input';
 import Button from './Button';
 
-function LoginForm({ onSubmit, loading, error: externalError }) {
+function LoginForm({ onSubmit, loading, errorMessage }) {
   const [formData, setFormData] = useState({
     role: 'employee',
     email: '',
@@ -14,11 +14,7 @@ function LoginForm({ onSubmit, loading, error: externalError }) {
   
   const [errors, setErrors] = useState({});
 
-  const roleOptions = [
-    { value: 'employee', label: 'Сотрудник' },
-    { value: 'manager', label: 'Руководитель' },
-    { value: 'hr', label: 'HR-специалист' }
-  ];
+  
 
   const isFormValid = () => {
     const newErrors = {};
@@ -70,17 +66,16 @@ function LoginForm({ onSubmit, loading, error: externalError }) {
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
       <h2 className={styles.title}>Авторизация</h2>
-      {externalError && <p className={styles.generalError}>{externalError}</p>}
-      {errors.general && <p className={styles.generalError}>{errors.general}</p>}
+      
+      {/* Красивый баннер ошибки вместо обычного текста */}
+      {errorMessage && (
+        <div className={styles.errorBanner}>
+          <span className={styles.errorIcon}>⚠️</span>
+          <span className={styles.errorText}>{errorMessage}</span>
+        </div>
+      )}
 
-      <Select
-        name="role"
-        value={formData.role}
-        onChange={handleChange}
-        options={roleOptions}
-        placeholder="Выберите должность"
-        error={errors.role}
-      />
+ 
 
       <Input
         type="email"
@@ -99,6 +94,7 @@ function LoginForm({ onSubmit, loading, error: externalError }) {
         placeholder="Пароль"
         error={errors.password}
       />
+
       <Input
         type="text"
         name="tab_number"
