@@ -28,6 +28,12 @@ function RequestTable({ requests }) {
             <td>{req.type}</td>
             <td className={styles[req.status] || ''}>
               {getStatusText(req.status)}
+              {/* Показываем комментарий при отклонении */}
+              {req.status === 'Отклонено' && req.rejection_comment && (
+                <div className={styles.rejectionComment}>
+                  Причина: {req.rejection_comment}
+                </div>
+              )}
             </td>
             <td>{req.createdAt}</td>
           </tr>

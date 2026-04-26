@@ -16,13 +16,13 @@ function EmployeePage() {
     const employeeId = currentUser.id;
     console.log('👤 Текущий пользователь:', currentUser);
     console.log('🆔 ID сотрудника для заявки:', employeeId);
+    
     const getPositionDisplay = () => {
         if (currentUser.position) {
             return currentUser.position;
         }
         return 'Сотрудник';
     };
-
 
     useEffect(() => {
         // Загружаем заявки ТЕКУЩЕГО сотрудника
@@ -41,6 +41,7 @@ function EmployeePage() {
                             req.status === 'approved' ? 'Утверждено' : 'Отклонено',
                     createdAt: req.created_at.slice(0, 10),
                     updatedAt: req.updated_at?.slice(0, 10) || req.created_at.slice(0, 10),
+                    rejection_comment: req.rejection_comment  // ← добавляем комментарий
                 }));
                 setRequests(formattedRequests);
                 setLoading(false);
@@ -86,6 +87,7 @@ function EmployeePage() {
                 status: 'На рассмотрении',
                 createdAt: new Date().toISOString().slice(0, 10),
                 updatedAt: new Date().toISOString().slice(0, 10),
+                rejection_comment: null
             };
             
             setRequests(prev => [formattedRequest, ...prev]);

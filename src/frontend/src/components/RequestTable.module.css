@@ -44,3 +44,11 @@
   color: #999;
   padding: 2rem;
 }
+.rejectionComment {
+    font-size: 11px;
+    color: #dc3545;
+    margin-top: 6px;
+    padding-top: 4px;
+    border-top: 1px dashed #ffcdd2;
+    font-weight: normal;
+}
