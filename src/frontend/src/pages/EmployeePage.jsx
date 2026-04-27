@@ -125,7 +125,7 @@ function EmployeePage(){
     if (error) return <div>Ошибка: {error}</div>;
 
     return (
-        <div className={styles.container}>
+        <div className={styles.coфntainer}>
             {/* Информация о пользователе */}
             <div className={styles.userInfo}>
                 <p>
