@@ -31,8 +31,8 @@ function EmployeePage(){
     // Получаем ID текущего пользователя из localStorage
     const currentUser = JSON.parse(localStorage.getItem('user') || '{}');
     const employeeId = currentUser.id;
-    console.log('👤 Текущий пользователь:', currentUser);
-    console.log('🆔 ID сотрудника для заявки:', employeeId);
+    console.log('Текущий пользователь:', currentUser);
+    console.log('ID сотрудника для заявки:', employeeId);
     
     const getPositionDisplay = () => {
         if (currentUser.position) {
