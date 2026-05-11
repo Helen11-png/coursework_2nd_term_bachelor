@@ -38,7 +38,7 @@ function EmployeePage(){
         if (currentUser.position) {
             return currentUser.position;
         }
-        return 'Сотрудник';
+        return 'Сотрудник';                         
     };
 
     // Загружаем заявления при монтировании страницы
@@ -125,22 +125,24 @@ function EmployeePage(){
     if (error) return <div>Ошибка: {error}</div>;
 
     return (
-        <div className={styles.coфntainer}>
-            {/* Информация о пользователе */}
-            <div className={styles.userInfo}>
-                <p>
-                    Вы вошли как: <strong>{currentUser.full_name}</strong>
-                    {currentUser.position && ` (${getPositionDisplay()})`}
-                    {currentUser.department && ` · ${currentUser.department}`}
-                </p>
+        <div className={styles.page}>
+            <div className={styles.container}>
+                
+                <div className={styles.header}>
+                    <Button onClick={() => setIsModalOpen(true)} className={styles.addButton}>Добавить заявление</Button>
+                    <div className={styles.userInfo}>
+                    <p>
+                        Вы вошли как: <strong>{currentUser.full_name}</strong>
+                        {currentUser.position && ` (${getPositionDisplay()})`}
+                        {currentUser.department && ` · ${currentUser.department}`}
+                    </p>
+                </div>
+                </div>
+                <RequestsTable requests={requests} />
+                <Modal isOpen={isModalOpen} onClose={handleCancel}>
+                    <RequestForm onSubmit={handleAddRequest} onCancel={handleCancel} />
+                </Modal>
             </div>
-            <div className={styles.header}>
-                <Button onClick={() => setIsModalOpen(true)}>Добавить заявление</Button>
-            </div>
-            <RequestsTable requests={requests} />
-            <Modal isOpen={isModalOpen} onClose={handleCancel}>
-                <RequestForm onSubmit={handleAddRequest} onCancel={handleCancel} />
-            </Modal>
         </div>
   );
 }

@@ -51,7 +51,7 @@
 }
 
 .approveBtn {
-  background-color: #28a745;
+  background-color: #545f7e;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -65,7 +65,7 @@
 }
 
 .rejectBtn {
-  background-color: #dc3545;
+  background-color: #4a90e2;
   color: white;
   border: none;
   padding: 0.5rem 1rem;

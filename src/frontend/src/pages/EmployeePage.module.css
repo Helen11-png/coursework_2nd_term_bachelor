@@ -1,7 +1,14 @@
+.page{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EDEDFF;
+}
+
 .container {
   max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
 }
 
 
@@ -11,22 +18,18 @@
   align-items: center;
   margin-bottom: 2rem;
 }
-.container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 .userInfo {
-    padding: 10px 0;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    padding: 10px 0px;
+    
 }
 
 .userInfo p {
     margin: 0;
     font-size: 14px;
     color: #666;
+    white-space: nowrap; 
 }
 
 .userInfo strong {
@@ -39,3 +42,8 @@
     color: #333;
 }
 
+.addButton{
+    width: auto !important;
+    min-width: auto !important;
+    padding: 0.75rem 1.5rem !important;
+}

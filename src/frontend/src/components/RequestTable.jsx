@@ -12,6 +12,12 @@ function RequestTable({ requests }) {
     };
     return statusMap[status] || status;
   };
+  const getDash = (comment) => {
+    if (comment && comment.trim() !== '') {
+      return comment;
+    }
+    return '—'; 
+  };
 
   return (
     <table className={styles.table}>
@@ -20,6 +26,7 @@ function RequestTable({ requests }) {
           <th>Заявление</th>
           <th>Статус</th>
           <th>Дата создания</th>
+          <th>Комментарий</th>
         </tr>
       </thead>
       <tbody>
@@ -27,15 +34,11 @@ function RequestTable({ requests }) {
           <tr key={req.id}>
             <td>{req.type}</td>
             <td className={styles[req.status] || ''}>
-              {getStatusText(req.status)}
-              {/* Показываем комментарий при отклонении */}
-              {req.status === 'Отклонено' && req.rejection_comment && (
-                <div className={styles.rejectionComment}>
-                  Причина: {req.rejection_comment}
-                </div>
-              )}
-            </td>
-            <td>{req.createdAt}</td>
+              {getStatusText(req.status)}</td>
+              <td>{req.createdAt}</td>
+            <td>{getDash(req.rejection_comment)}</td>
+            
+            
           </tr>
         ))}
       </tbody>

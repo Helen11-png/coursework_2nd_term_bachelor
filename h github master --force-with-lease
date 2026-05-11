@@ -1,0 +1,19 @@
+[33mcommit e995d36e965a1bb2aeeacc823868e8a3f9ffd7dc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: 62083a3 83f612a
+Author: alena <alena.nik.07@mail.ru>
+Date:   Mon Apr 27 11:29:29 2026 +0300
+
+    Merge branch 'master' of https://gitverse.ru/proektnaya_deyatelnost_topit/9-00_team19_Nikitinskaya
+
+[33mcommit 62083a3fa942168c0ba16da00a41bb7c85750d58[m
+Author: alena <alena.nik.07@mail.ru>
+Date:   Mon Apr 27 11:28:49 2026 +0300
+
+    +++
+
+[33mcommit 83f612a890a92c66fb9ef51ad843b378531dd24c[m
+Merge: b5c903d 1b9ab1c
+Author: alena_nikitinskaya <199075alena_nikitinskaya@users.no-reply.gitverse.ru>
+Date:   Mon Apr 27 06:47:42 2026 +0000
+
+    Запрос на слияние 'my-changes' (#3) из my-changes в master

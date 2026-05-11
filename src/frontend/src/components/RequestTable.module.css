@@ -9,13 +9,16 @@
   background: #FCFCFF;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  
 }
 
 .table th,
 .table td {
   padding: 1rem;
+  
   text-align: left;
   border-bottom: 1px solid #8A8A8A;
+  text-align: center;
 }
 
 .table th {

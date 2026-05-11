@@ -3,35 +3,7 @@ import { useLocation, Link } from 'react-router-dom';
 import ManagerRequestTable from '../components/ManagerRequestTable';
 import styles from './ManagerPage.module.css';
 
-const mockRequests = [ //*это для проверки таблицы*//
-  {
-    id: 1,
-    employee: 'Иванов Иван',
-    department: 'HR',
-    type: 'Отпуск',
-    startDate: '2026-05-10',
-    endDate: '2026-05-20',
-    status: 'pending',
-  },
-  {
-    id: 1,
-    employee: 'Эдуард Эдиков',
-    department: 'IT',
-    type: 'Отпуск',
-    startDate: '2026-05-10',
-    endDate: '2026-05-31',
-    status: 'approved_by_hr',
-  },
-  {
-    id: 2,
-    employee: 'Петров Петр',
-    department: 'Продажи',
-    type: 'Командировка',
-    startDate: '2026-06-01',
-    endDate: '2026-06-15',
-    status: 'approved_by_manager'
-  }
-];
+
 
 function ManagerPage(){
     const location = useLocation();
@@ -135,28 +107,30 @@ function ManagerPage(){
     if (error) return <div>Ошибка: {error}</div>;
 
     return (
-    <div className={styles.container}>
-      <div className={styles.userInfo}>
-        <p>
-          Вы вошли как: <strong>{currentUser.full_name}</strong>
-          {currentUser.department && ` (${currentUser.department})`}
-        </p>
-        <Link to="/employee" className={styles.myRequestsLink}>
-          Мои заявки (как сотрудник)
-        </Link>
-      </div>
+    <div className={styles.page}>
+        <div className={styles.container}>
+        <div className={styles.userInfo}>
+            <p>
+            Вы вошли как: <strong>{currentUser.full_name}</strong>
+            {currentUser.department && ` (${currentUser.department})`}
+            </p>
+            <Link to="/employee" className={styles.myRequestsLink}>
+            Мои заявки (как сотрудник)
+            </Link>
+        </div>
       
-      <h1 className={styles.title}>
-        {role === 'hr' ? 'Заявления на согласование' : 'Заявления на рассмотрение'}
-      </h1>
+        <h1 className={styles.title}>
+            {role === 'hr' ? 'Заявления на согласование' : 'Заявления на рассмотрение'}
+        </h1>
       
-      <ManagerRequestTable
-        requests={filteredRequests}
-        onApprove={handleApprove}
-        onReject={handleReject}
-        showActions={true}
-        role={role}
-      />
+        <ManagerRequestTable
+            requests={filteredRequests}
+            onApprove={handleApprove}
+            onReject={handleReject}
+            showActions={true}
+            role={role}
+        />
+        </div>
     </div>
   );
 }

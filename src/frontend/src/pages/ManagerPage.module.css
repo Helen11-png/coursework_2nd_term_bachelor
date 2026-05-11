@@ -1,3 +1,9 @@
+.page{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EDEDFF;
+}
+
 .container {
   max-width: 1200px;
   margin: 2rem auto;
