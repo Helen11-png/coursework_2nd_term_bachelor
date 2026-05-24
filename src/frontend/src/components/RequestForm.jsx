@@ -1,4 +1,4 @@
-import Input from './Input';
+
 import Select from './Select';
 import Button from './Button';
 import DateRange from './DateRange';
@@ -6,7 +6,6 @@ import styles from './RequestForm.module.css'
 import { useState } from 'react';
 
 function RequestForm({onSubmit, onCancel}){
-    // Достаем данные пользователя из localStorage
     const currentUser = JSON.parse(localStorage.getItem('user') || '{}');
     
     const [formData, setFormData] = useState({
@@ -73,7 +72,6 @@ function RequestForm({onSubmit, onCancel}){
       </button>
       <h2 className={styles.title}>Новое заявление</h2>
       
-      {/* Блок с информацией о пользователе - как readonly поля */}
       <div className={styles.readonlyField}>
         <label className={styles.readonlyLabel}>Сотрудник</label>
         <div className={styles.readonlyValue}>{currentUser.full_name || '—'}</div>

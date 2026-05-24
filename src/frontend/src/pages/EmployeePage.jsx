@@ -5,30 +5,13 @@ import Modal from '../components/Modal';
 import RequestForm from '../components/RequestForm';
 import styles from './EmployeePage.module.css';
 
-const mockRequests = [ //*это для проверки таблицы*//
-  {
-    id: 1,
-    type: 'Отпуск',
-    status: 'approved',
-    updatedAt: '2026-03-15',
-    createdAt: '2026-03-10',
-  },
-  {
-    id: 2,
-    type: 'Командировка',
-    status: 'pending',
-    updatedAt: '2026-03-14',
-    createdAt: '2026-03-12',
-  },
-];
-
 function EmployeePage(){
     const [requests, setRequests] = useState([]);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     
-    // Получаем ID текущего пользователя из localStorage
+
     const currentUser = JSON.parse(localStorage.getItem('user') || '{}');
     const employeeId = currentUser.id;
     console.log('Текущий пользователь:', currentUser);
@@ -41,9 +24,7 @@ function EmployeePage(){
         return 'Сотрудник';                         
     };
 
-    // Загружаем заявления при монтировании страницы
     useEffect(() => {
-        // Загружаем заявки ТЕКУЩЕГО сотрудника
         fetch(`/api/my-requests/?employee_id=${employeeId}`)
             .then(res => {
                 if (!res.ok) throw new Error('Ошибка загрузки');

@@ -8,7 +8,6 @@ function RequestTable({ requests }) {
       'in_approval': 'Утверждено руководителем',
       'approved': 'Утверждено',
       'rejected': 'Отклонено',
-      'draft': 'Черновик'
     };
     return statusMap[status] || status;
   };

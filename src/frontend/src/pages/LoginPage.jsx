@@ -33,7 +33,7 @@ function LoginPage() {
       
       localStorage.setItem('user', JSON.stringify(data));
       
-      // Перенаправляем в зависимости от роли из базы данных
+   
       if (data.role === 'employee') {
         navigate('/employee');
       } else if (data.role === 'manager') {
