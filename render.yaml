@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: hr-onboarding
+    runtime: python
+    branch: master
+    rootDir: src/backend/coursework/hr_onboarding
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn hr_onboarding.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: DJANGO_SETTINGS_MODULE
+        value: hr_onboarding.settings
