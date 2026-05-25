@@ -42,7 +42,7 @@ def request_list(request):
         return Response(serializer.data)
 
     elif request.method == 'POST':
-        print("📨 Получены данные:", request.data)
+        print("Получены данные:", request.data)
 
         data = request.data
         employee_id = data.get('employee')
@@ -56,7 +56,7 @@ def request_list(request):
         # Определяем начальный статус
         if employee.role == 'manager' and not employee.manager:
             initial_status = 'in_approval'
-            print(f"👔 Руководитель {employee.full_name} без начальника → заявка сразу HR")
+            print(f"Руководитель {employee.full_name} без начальника → заявка сразу HR")
         else:
             initial_status = 'submitted'
 
@@ -79,7 +79,7 @@ def request_list(request):
             'comment': data.get('comment', '')
         }
 
-        print("🔄 Адаптированные данные:", adapted_data)
+        print("Адаптированные данные:", adapted_data)
 
         serializer = RequestSerializer(data=adapted_data)
         if serializer.is_valid():
@@ -94,12 +94,12 @@ def request_list(request):
                     manager_step.acted_at = timezone.now()
                     manager_step.comment = 'Автоматически (руководитель без начальника)'
                     manager_step.save()
-                    print(f"✅ Шаг руководителя автоматически одобрен")
+                    print(f"Шаг руководителя автоматически одобрен")
 
-            print("✅ Заявка создана!")
+            print("Заявка создана!")
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
-        print("❌ Ошибки валидации:", serializer.errors)
+        print("Ошибки валидации:", serializer.errors)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['GET', 'PUT', 'DELETE'])
@@ -174,17 +174,15 @@ def approve_request(request, pk):
         return Response({'error': 'Заявка не найдена'}, status=404)
 
     role = request.data.get('role', 'manager')
-    print(f"✅ Утверждение заявки {pk}, роль: {role}")
+    print(f"Утверждение заявки {pk}, роль: {role}")
     print(
-        f"👤 Сотрудник: {req.employee.full_name}, роль сотрудника: {req.employee.role}, есть менеджер: {req.employee.manager is not None}")
+        f"Сотрудник: {req.employee.full_name}, роль сотрудника: {req.employee.role}, есть менеджер: {req.employee.manager is not None}")
 
-    # ОСОБЫЙ СЛУЧАЙ: Если заявка от руководителя без начальника
     if req.employee.role == 'manager' and not req.employee.manager:
-        print("👔 Руководитель без начальника, заявка сразу в HR")
+        print("Руководитель без начальника, заявка сразу в HR")
         req.status = 'in_approval'
         req.save()
 
-        # Обновляем шаг руководителя как автоматически пройденный
         manager_step = req.steps.filter(step_number=1, role='manager').first()
         if manager_step:
             manager_step.status = 'approved'
@@ -196,38 +194,33 @@ def approve_request(request, pk):
 
     # Обычный случай: утверждение руководителем или HR
     if role == 'manager':
-        # Руководитель утвердил → отправляем HR
         req.status = 'in_approval'
         req.save()
 
-        # Обновляем шаг руководителя
         manager_step = req.steps.filter(step_number=1, role='manager').first()
         if manager_step:
             manager_step.status = 'approved'
             manager_step.acted_at = timezone.now()
             manager_step.save()
-        print("✅ Заявка отправлена HR")
+        print("Заявка отправлена HR")
 
     elif role == 'hr':
-        # HR утвердил → заявка одобрена
         req.status = 'approved'
         req.approved_at = timezone.now()
         req.save()
 
-        # Обновляем шаг HR
         hr_step = req.steps.filter(step_number=2, role='hr').first()
         if hr_step:
             hr_step.status = 'approved'
             hr_step.acted_at = timezone.now()
             hr_step.save()
-        print("✅ Заявка одобрена HR")
+        print("Заявка одобрена HR")
 
     return Response({'status': 'ok'})
 
 
 @api_view(['POST'])
 def reject_request(request, pk):
-    """Отклонить заявку с комментарием"""
     try:
         req = Request.objects.get(pk=pk)
     except Request.DoesNotExist:
@@ -247,8 +240,7 @@ def reject_request(request, pk):
 
 @api_view(['POST'])
 def login(request):
-    """Вход пользователя по табельному номеру и паролю"""
-    print("📨 Данные входа:", request.data)
+    print("Данные входа:", request.data)
 
     tab_number = request.data.get('tab_number')
     password = request.data.get('password')
@@ -267,9 +259,9 @@ def login(request):
 
     try:
         employee = Employee.objects.get(tab_number=tab_number)
-        print(f"✅ Найден сотрудник: {employee.full_name}, роль: {employee.role}, ID: {employee.id}")
+        print(f"Найден сотрудник: {employee.full_name}, роль: {employee.role}, ID: {employee.id}")
         if employee.password != password:
-            print(f"❌ Неверный пароль для {employee.full_name}")
+            print(f"Неверный пароль для {employee.full_name}")
             return Response(
                 {'error': 'Неверный пароль'},
                 status=status.HTTP_401_UNAUTHORIZED
@@ -284,11 +276,11 @@ def login(request):
             'manager_id': employee.manager.id if employee.manager else None
         }
 
-        print("✅ Ответ:", response_data)
+        print("Ответ:", response_data)
         return Response(response_data)
 
     except Employee.DoesNotExist:
-        print(f"❌ Сотрудник с табельным номером {tab_number} не найден")
+        print(f"Сотрудник с табельным номером {tab_number} не найден")
         return Response(
             {'error': f'Сотрудник с табельным номером {tab_number} не найден'},
             status=status.HTTP_404_NOT_FOUND

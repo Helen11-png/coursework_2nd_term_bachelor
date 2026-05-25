@@ -6,16 +6,14 @@ from api.models import Request, Route, ApprovalStep
 class Command(BaseCommand):
     def handle(self, *args, **options):
         import os
-        self.stdout.write("🔍 Проверка путей:")
+        self.stdout.write("Проверка путей:")
         self.stdout.write(f"Текущая папка: {os.getcwd()}")
 
-        # Создаем папку data
         root_data = os.path.join(os.path.dirname(
             os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))), 'data')
         os.makedirs(root_data, exist_ok=True)
-        self.stdout.write(f"✅ Папка data: {root_data}")
+        self.stdout.write(f"Папка data: {root_data}")
 
-        # ===== СОТРУДНИКИ =====
         employee1, created1 = Employee.objects.get_or_create(
             tab_number='001',
             defaults={
@@ -46,8 +44,6 @@ class Command(BaseCommand):
             }
         )
 
-        # ===== РУКОВОДИТЕЛИ =====
-        # IT отдел
         it_manager, created_it = Employee.objects.get_or_create(
             tab_number='010',
             defaults={
@@ -58,7 +54,7 @@ class Command(BaseCommand):
             }
         )
 
-        # Sales отдел
+
         sales_manager, created_sales = Employee.objects.get_or_create(
             tab_number='020',
             defaults={
@@ -69,7 +65,6 @@ class Command(BaseCommand):
             }
         )
 
-        # HR отдел
         hr_manager, created_hr = Employee.objects.get_or_create(
             tab_number='030',
             defaults={
@@ -80,23 +75,20 @@ class Command(BaseCommand):
             }
         )
 
-        # ===== НАЗНАЧАЕМ РУКОВОДИТЕЛЕЙ =====
-        # Иван Иванов (IT) → подчиняется Петру Сидорову
         employee1.manager = it_manager
         employee1.save()
-        self.stdout.write(f"✅ {employee1.full_name} → {it_manager.full_name}")
+        self.stdout.write(f"  {employee1.full_name} → {it_manager.full_name}")
 
-        # Петр Петров (Sales) → подчиняется Ольге Менеджер
+
         employee2.manager = sales_manager
         employee2.save()
-        self.stdout.write(f"✅ {employee2.full_name} → {sales_manager.full_name}")
+        self.stdout.write(f"  {employee2.full_name} → {sales_manager.full_name}")
 
-        # Мария Сидорова (HR) → подчиняется Анне HR-руководитель
         employee3.manager = hr_manager
         employee3.save()
-        self.stdout.write(f"✅ {employee3.full_name} → {hr_manager.full_name}")
+        self.stdout.write(f"  {employee3.full_name} → {hr_manager.full_name}")
 
-        # ===== МАРШРУТЫ =====
+
         Route.objects.get_or_create(
             request_type='vacation',
             step_number=1,
@@ -118,14 +110,13 @@ class Command(BaseCommand):
             defaults={'role': 'hr', 'sla_days': 2}
         )
 
-        # ===== ЗАЯВКИ =====
         req1 = Request.objects.create(
             employee=employee1,
             request_type='vacation',
             status='submitted'
         )
         req1.create_approval_steps()
-        self.stdout.write(f"✅ Создана заявка #{req1.id} (отпуск, {employee1.full_name})")
+        self.stdout.write(f"Создана заявка #{req1.id} (отпуск, {employee1.full_name})")
 
         req2 = Request.objects.create(
             employee=employee2,
@@ -133,7 +124,7 @@ class Command(BaseCommand):
             status='submitted'
         )
         req2.create_approval_steps()
-        self.stdout.write(f"✅ Создана заявка #{req2.id} (командировка, {employee2.full_name})")
+        self.stdout.write(f"Создана заявка #{req2.id} (командировка, {employee2.full_name})")
 
         req3 = Request.objects.create(
             employee=employee3,
@@ -148,6 +139,6 @@ class Command(BaseCommand):
             step.status = 'approved'
             step.acted_at = '2026-02-22 22:59:04'
             step.save()
-        self.stdout.write(f"✅ Создана заявка #{req3.id} (одобренный отпуск, {employee3.full_name})")
+        self.stdout.write(f"  Создана заявка #{req3.id} (одобренный отпуск, {employee3.full_name})")
 
-        self.stdout.write(self.style.SUCCESS('✅ Тестовые данные успешно созданы!'))
+        self.stdout.write(self.style.SUCCESS('  Тестовые данные успешно созданы!'))
