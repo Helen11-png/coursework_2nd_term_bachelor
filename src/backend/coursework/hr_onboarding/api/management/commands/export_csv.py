@@ -39,7 +39,7 @@ class Command(BaseCommand):
                 writer.writerow([
                     req.id,
                     req.employee.tab_number,
-                    'Отпуск' if req.request_type == 'vacation' else 'Командировка',
+                    req.request_type,
                     req.status,
                     req.created_at.strftime('%d.%m.%Y') if req.created_at else '',
                     req.approved_at.strftime('%d.%m.%Y') if req.approved_at else '',
@@ -124,7 +124,7 @@ class Command(BaseCommand):
                 "id": req.id,
                 "employee_tab_number": req.employee.tab_number,
                 "employee_name": req.employee.full_name,
-                "type": "Отпуск" if req.request_type == 'vacation' else "Командировка",
+                "type": req.request_type,
                 "status": req.status,
                 "created_at": req.created_at.strftime('%d.%m.%Y %H:%M:%S') if req.created_at else '',
                 "approved_at": req.approved_at.strftime('%d.%m.%Y') if req.approved_at else '',
