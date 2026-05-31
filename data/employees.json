@@ -1,290 +1,194 @@
 [
   {
-    "model": "employees.employee",
-    "pk": 1,
-    "fields": {
-      "tab_number": "001",
-      "full_name": "Иван Иванов",
-      "department": "IT",
-      "position": "Разработчик",
-      "role": "employee",
-      "manager": 7
-    }
+    "tab_number": "001",
+    "full_name": "Иван Иванов",
+    "department": "IT",
+    "position": "Разработчик",
+    "role": "employee",
+    "manager_tab_number": "010"
   },
   {
-    "model": "employees.employee",
-    "pk": 2,
-    "fields": {
-      "tab_number": "002",
-      "full_name": "Петр Петров",
-      "department": "Sales",
-      "position": "Менеджер",
-      "role": "employee",
-      "manager": 10
-    }
+    "tab_number": "002",
+    "full_name": "Петр Петров",
+    "department": "Sales",
+    "position": "Менеджер",
+    "role": "employee",
+    "manager_tab_number": "020"
   },
   {
-    "model": "employees.employee",
-    "pk": 3,
-    "fields": {
-      "tab_number": "003",
-      "full_name": "Мария Сидорова",
-      "department": "Административный отдел",
-      "position": "employee",
-      "role": "employee",
-      "manager": 11
-    }
+    "tab_number": "003",
+    "full_name": "Мария Сидорова",
+    "department": "Административный отдел",
+    "position": "employee",
+    "role": "employee",
+    "manager_tab_number": "030"
   },
   {
-    "model": "employees.employee",
-    "pk": 4,
-    "fields": {
-      "tab_number": "005",
-      "full_name": "Елена Комарова",
-      "department": "Sales",
-      "position": "уборщица",
-      "role": "employee",
-      "manager": 10
-    }
+    "tab_number": "005",
+    "full_name": "Елена Комарова",
+    "department": "Sales",
+    "position": "уборщица",
+    "role": "employee",
+    "manager_tab_number": "020"
   },
   {
-    "model": "employees.employee",
-    "pk": 5,
-    "fields": {
-      "tab_number": "006",
-      "full_name": "Петров Петр Петрович",
-      "department": "IT",
-      "position": "стажер",
-      "role": "employee",
-      "manager": 7
-    }
+    "tab_number": "006",
+    "full_name": "Петров Петр Петрович",
+    "department": "IT",
+    "position": "стажер",
+    "role": "employee",
+    "manager_tab_number": "010"
   },
   {
-    "model": "employees.employee",
-    "pk": 6,
-    "fields": {
-      "tab_number": "008",
-      "full_name": "Бульдин Захар Андреевич",
-      "department": "Административный отдел",
-      "position": "музыкант депутата",
-      "role": "employee",
-      "manager": 11
-    }
+    "tab_number": "008",
+    "full_name": "Бульдин Захар Андреевич",
+    "department": "Административный отдел",
+    "position": "музыкант депутата",
+    "role": "employee",
+    "manager_tab_number": "030"
   },
   {
-    "model": "employees.employee",
-    "pk": 7,
-    "fields": {
-      "tab_number": "010",
-      "full_name": "Петр Сидоров",
-      "department": "IT",
-      "position": "Руководитель отдела",
-      "role": "manager",
-      "manager": null
-    }
+    "tab_number": "010",
+    "full_name": "Петр Сидоров",
+    "department": "IT",
+    "position": "Руководитель отдела",
+    "role": "manager",
+    "manager_tab_number": null
   },
   {
-    "model": "employees.employee",
-    "pk": 9,
-    "fields": {
-      "tab_number": "hr_001",
-      "full_name": "Соколова Наталья",
-      "department": "Admin",
-      "position": "Hr",
-      "role": "hr",
-      "manager": null
-    }
+    "tab_number": "hr_001",
+    "full_name": "Соколова Наталья",
+    "department": "Admin",
+    "position": "Hr",
+    "role": "hr",
+    "manager_tab_number": null
   },
   {
-    "model": "employees.employee",
-    "pk": 10,
-    "fields": {
-      "tab_number": "020",
-      "full_name": "Ольга Лебедева",
-      "department": "Sales",
-      "position": "Руководитель Sales",
-      "role": "manager",
-      "manager": null
-    }
+    "tab_number": "020",
+    "full_name": "Ольга Лебедева",
+    "department": "Sales",
+    "position": "Руководитель Sales",
+    "role": "manager",
+    "manager_tab_number": null
   },
   {
-    "model": "employees.employee",
-    "pk": 11,
-    "fields": {
-      "tab_number": "030",
-      "full_name": "Анна Волкова",
-      "department": "Административный отдел",
-      "position": "Руководитель Административного отдела",
-      "role": "manager",
-      "manager": null
-    }
+    "tab_number": "030",
+    "full_name": "Анна Волкова",
+    "department": "Административный отдел",
+    "position": "Руководитель Административного отдела",
+    "role": "manager",
+    "manager_tab_number": null
   },
   {
-    "model": "employees.employee",
-    "pk": 12,
-    "fields": {
-      "tab_number": "011",
-      "full_name": "Артем Кобзев",
-      "department": "Административный отдел",
-      "position": "Депутат",
-      "role": "employee",
-      "manager": 11
-    }
+    "tab_number": "011",
+    "full_name": "Артем Кобзев",
+    "department": "Административный отдел",
+    "position": "Депутат",
+    "role": "employee",
+    "manager_tab_number": "030"
   },
   {
-    "model": "employees.employee",
-    "pk": 13,
-    "fields": {
-      "tab_number": "012",
-      "full_name": "Домнин Иван",
-      "department": "Административный отдел",
-      "position": "Советник депутата",
-      "role": "employee",
-      "manager": 11
-    }
+    "tab_number": "012",
+    "full_name": "Домнин Иван",
+    "department": "Административный отдел",
+    "position": "Советник депутата",
+    "role": "employee",
+    "manager_tab_number": "030"
   },
   {
-    "model": "employees.employee",
-    "pk": 14,
-    "fields": {
-      "tab_number": "013",
-      "full_name": "Анастасия Шалаева",
-      "department": "Административный отдел",
-      "position": "Фотограф депутата",
-      "role": "employee",
-      "manager": 11
-    }
+    "tab_number": "013",
+    "full_name": "Анастасия Шалаева",
+    "department": "Административный отдел",
+    "position": "Фотограф депутата",
+    "role": "employee",
+    "manager_tab_number": "030"
   },
   {
-    "model": "employees.employee",
-    "pk": 15,
-    "fields": {
-      "tab_number": "014",
-      "full_name": "Никитинская Алена",
-      "department": "Административный отдел",
-      "position": "Бог этой системы",
-      "role": "employee",
-      "manager": 11
-    }
+    "tab_number": "014",
+    "full_name": "Никитинская Алена",
+    "department": "Административный отдел",
+    "position": "Бог этой системы",
+    "role": "employee",
+    "manager_tab_number": "030"
   },
   {
-    "model": "employees.employee",
-    "pk": 16,
-    "fields": {
-      "tab_number": "015",
-      "full_name": "Наталья Папаева",
-      "department": "Административный отдел",
-      "position": "уборщица",
-      "role": "employee",
-      "manager": 11
-    }
+    "tab_number": "015",
+    "full_name": "Наталья Папаева",
+    "department": "Административный отдел",
+    "position": "уборщица",
+    "role": "employee",
+    "manager_tab_number": "030"
   },
   {
-    "model": "employees.employee",
-    "pk": 17,
-    "fields": {
-      "tab_number": "016",
-      "full_name": "Морозов Андрей",
-      "department": "IT",
-      "position": "стажер 1С",
-      "role": "employee",
-      "manager": 7
-    }
+    "tab_number": "016",
+    "full_name": "Морозов Андрей",
+    "department": "IT",
+    "position": "стажер 1С",
+    "role": "employee",
+    "manager_tab_number": "010"
   },
   {
-    "model": "employees.employee",
-    "pk": 18,
-    "fields": {
-      "tab_number": "017",
-      "full_name": "Морозова Кристина",
-      "department": "Sales",
-      "position": "Продуктовый аналитик",
-      "role": "employee",
-      "manager": 10
-    }
+    "tab_number": "017",
+    "full_name": "Морозова Кристина",
+    "department": "Sales",
+    "position": "Продуктовый аналитик",
+    "role": "employee",
+    "manager_tab_number": "020"
   },
   {
-    "model": "employees.employee",
-    "pk": 19,
-    "fields": {
-      "tab_number": "018",
-      "full_name": "Соловьев Алексей",
-      "department": "IT",
-      "position": "C++ разработчик",
-      "role": "employee",
-      "manager": 7
-    }
+    "tab_number": "018",
+    "full_name": "Соловьев Алексей",
+    "department": "IT",
+    "position": "C++ разработчик",
+    "role": "employee",
+    "manager_tab_number": "010"
   },
   {
-    "model": "employees.employee",
-    "pk": 20,
-    "fields": {
-      "tab_number": "019",
-      "full_name": "Попов Виктор",
-      "department": "Sales",
-      "position": "Социолог",
-      "role": "employee",
-      "manager": 10
-    }
+    "tab_number": "019",
+    "full_name": "Попов Виктор",
+    "department": "Sales",
+    "position": "Социолог",
+    "role": "employee",
+    "manager_tab_number": "020"
   },
   {
-    "model": "employees.employee",
-    "pk": 21,
-    "fields": {
-      "tab_number": "021",
-      "full_name": "Кузнецов Евгений",
-      "department": "Sales",
-      "position": "Бизнес аналитик",
-      "role": "employee",
-      "manager": 10
-    }
+    "tab_number": "021",
+    "full_name": "Кузнецов Евгений",
+    "department": "Sales",
+    "position": "Бизнес аналитик",
+    "role": "employee",
+    "manager_tab_number": "020"
   },
   {
-    "model": "employees.employee",
-    "pk": 22,
-    "fields": {
-      "tab_number": "022",
-      "full_name": "Виноградова Юлия",
-      "department": "IT",
-      "position": "Аналитик",
-      "role": "employee",
-      "manager": 7
-    }
+    "tab_number": "022",
+    "full_name": "Виноградова Юлия",
+    "department": "IT",
+    "position": "Аналитик",
+    "role": "employee",
+    "manager_tab_number": "010"
   },
   {
-    "model": "employees.employee",
-    "pk": 23,
-    "fields": {
-      "tab_number": "023",
-      "full_name": "Виноградова Мария",
-      "department": "IT",
-      "position": "Go-разработчик",
-      "role": "employee",
-      "manager": 7
-    }
+    "tab_number": "023",
+    "full_name": "Виноградова Мария",
+    "department": "IT",
+    "position": "Go-разработчик",
+    "role": "employee",
+    "manager_tab_number": "010"
   },
   {
-    "model": "employees.employee",
-    "pk": 24,
-    "fields": {
-      "tab_number": "024",
-      "full_name": "Виноградова Елена",
-      "department": "IT",
-      "position": "Менеджер",
-      "role": "employee",
-      "manager": 7
-    }
+    "tab_number": "024",
+    "full_name": "Виноградова Елена",
+    "department": "IT",
+    "position": "Менеджер",
+    "role": "employee",
+    "manager_tab_number": "010"
   },
   {
-    "model": "employees.employee",
-    "pk": 25,
-    "fields": {
-      "tab_number": "025",
-      "full_name": "Виноградов Виктор",
-      "department": "Sales",
-      "position": "Помощник продуктового аналитика",
-      "role": "employee",
-      "manager": 10
-    }
+    "tab_number": "025",
+    "full_name": "Виноградов Виктор",
+    "department": "Sales",
+    "position": "Помощник продуктового аналитика",
+    "role": "employee",
+    "manager_tab_number": "020"
   }
 ]

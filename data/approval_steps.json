@@ -6,12 +6,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T10:49:33.294072+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 10:49:33",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 32,
@@ -20,12 +19,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T10:49:33.358594+00:00",
-    "acted_at": "2026-04-05T12:12:00.843157+00:00",
+    "assigned_at": "05.04.2026 10:49:33",
+    "acted_at": "05.04.2026 12:12:00",
     "comment": "",
     "sla_days": 1,
-    "duration_days": 0.06,
-    "is_overdue": false
+    "duration_days": 0.06
   },
   {
     "id": 33,
@@ -34,12 +32,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T10:49:33.490309+00:00",
-    "acted_at": "2026-04-05T11:59:43.386287+00:00",
+    "assigned_at": "05.04.2026 10:49:33",
+    "acted_at": "05.04.2026 11:59:43",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.05,
-    "is_overdue": false
+    "duration_days": 0.05
   },
   {
     "id": 34,
@@ -48,12 +45,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T10:49:33.555676+00:00",
-    "acted_at": "2026-04-05T12:12:02.011141+00:00",
+    "assigned_at": "05.04.2026 10:49:33",
+    "acted_at": "05.04.2026 12:12:02",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.06,
-    "is_overdue": false
+    "duration_days": 0.06
   },
   {
     "id": 35,
@@ -62,12 +58,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T10:49:33.721280+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 10:49:33",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.49,
-    "is_overdue": false
+    "duration_days": -41.49
   },
   {
     "id": 36,
@@ -76,12 +71,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T10:49:33.783548+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 10:49:33",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.49,
-    "is_overdue": false
+    "duration_days": -41.49
   },
   {
     "id": 37,
@@ -90,12 +84,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T10:50:50.947270+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 10:50:50",
+    "acted_at": "",
     "comment": "",
     "sla_days": 3,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 38,
@@ -104,12 +97,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T10:50:51.011520+00:00",
-    "acted_at": "2026-04-05T14:35:48.769255+00:00",
+    "assigned_at": "05.04.2026 10:50:51",
+    "acted_at": "05.04.2026 14:35:48",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.16,
-    "is_overdue": false
+    "duration_days": 0.16
   },
   {
     "id": 39,
@@ -118,12 +110,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T10:54:49.310283+00:00",
-    "acted_at": "2026-04-05T11:47:06.018800+00:00",
+    "assigned_at": "05.04.2026 10:54:49",
+    "acted_at": "05.04.2026 11:47:06",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.04,
-    "is_overdue": false
+    "duration_days": 0.04
   },
   {
     "id": 40,
@@ -132,12 +123,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T10:54:49.475763+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 10:54:49",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 41,
@@ -146,12 +136,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T10:54:49.726865+00:00",
-    "acted_at": "2026-04-05T11:59:44.268805+00:00",
+    "assigned_at": "05.04.2026 10:54:49",
+    "acted_at": "05.04.2026 11:59:44",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.05,
-    "is_overdue": false
+    "duration_days": 0.05
   },
   {
     "id": 42,
@@ -160,12 +149,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T10:54:49.823577+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 10:54:49",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 43,
@@ -174,12 +162,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T10:54:50.037961+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 10:54:50",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.5,
-    "is_overdue": false
+    "duration_days": -41.5
   },
   {
     "id": 44,
@@ -188,12 +175,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T10:54:50.117451+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 10:54:50",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.5,
-    "is_overdue": false
+    "duration_days": -41.5
   },
   {
     "id": 45,
@@ -202,12 +188,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T11:27:05.574989+00:00",
-    "acted_at": "2026-04-05T11:47:06.676333+00:00",
+    "assigned_at": "05.04.2026 11:27:05",
+    "acted_at": "05.04.2026 11:47:06",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.01,
-    "is_overdue": false
+    "duration_days": 0.01
   },
   {
     "id": 46,
@@ -216,12 +201,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T11:27:05.636372+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 11:27:05",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 47,
@@ -230,12 +214,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T11:27:05.760330+00:00",
-    "acted_at": "2026-04-05T11:59:44.983263+00:00",
+    "assigned_at": "05.04.2026 11:27:05",
+    "acted_at": "05.04.2026 11:59:44",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.02,
-    "is_overdue": false
+    "duration_days": 0.02
   },
   {
     "id": 48,
@@ -244,12 +227,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T11:27:05.820967+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 11:27:05",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 49,
@@ -258,12 +240,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T11:27:05.961557+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 11:27:05",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.52,
-    "is_overdue": false
+    "duration_days": -41.52
   },
   {
     "id": 50,
@@ -272,12 +253,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T11:27:06.019664+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 11:27:06",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.52,
-    "is_overdue": false
+    "duration_days": -41.52
   },
   {
     "id": 51,
@@ -286,12 +266,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T11:27:32.367673+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 11:27:32",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 52,
@@ -300,12 +279,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T11:27:32.450149+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 11:27:32",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 53,
@@ -314,12 +292,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T11:27:55.882142+00:00",
-    "acted_at": "2026-04-05T11:47:04.705928+00:00",
+    "assigned_at": "05.04.2026 11:27:55",
+    "acted_at": "05.04.2026 11:47:04",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.01,
-    "is_overdue": false
+    "duration_days": 0.01
   },
   {
     "id": 54,
@@ -328,12 +305,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T11:27:55.962885+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 11:27:55",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 55,
@@ -342,12 +318,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T11:35:44.594125+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 11:35:44",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 56,
@@ -356,12 +331,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T11:35:44.658333+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 11:35:44",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 57,
@@ -370,12 +344,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T11:38:03.070558+00:00",
-    "acted_at": "2026-04-05T11:47:01.841939+00:00",
+    "assigned_at": "05.04.2026 11:38:03",
+    "acted_at": "05.04.2026 11:47:01",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.01,
-    "is_overdue": false
+    "duration_days": 0.01
   },
   {
     "id": 58,
@@ -384,12 +357,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T11:38:03.151277+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 11:38:03",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 59,
@@ -398,12 +370,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T11:38:22.459491+00:00",
-    "acted_at": "2026-04-05T11:47:07.994320+00:00",
+    "assigned_at": "05.04.2026 11:38:22",
+    "acted_at": "05.04.2026 11:47:07",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.01,
-    "is_overdue": false
+    "duration_days": 0.01
   },
   {
     "id": 60,
@@ -412,12 +383,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T11:38:22.522492+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 11:38:22",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 61,
@@ -426,12 +396,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T11:46:09.529405+00:00",
-    "acted_at": "2026-04-05T11:47:08.848276+00:00",
+    "assigned_at": "05.04.2026 11:46:09",
+    "acted_at": "05.04.2026 11:47:08",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 62,
@@ -440,12 +409,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T11:46:09.606820+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 11:46:09",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 63,
@@ -454,12 +422,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T11:49:31.219749+00:00",
-    "acted_at": "2026-04-05T11:49:39.732235+00:00",
+    "assigned_at": "05.04.2026 11:49:31",
+    "acted_at": "05.04.2026 11:49:39",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 64,
@@ -468,12 +435,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T11:49:31.298952+00:00",
-    "acted_at": "2026-04-05T11:49:53.280845+00:00",
+    "assigned_at": "05.04.2026 11:49:31",
+    "acted_at": "05.04.2026 11:49:53",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 65,
@@ -482,12 +448,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:07:28.914889+00:00",
-    "acted_at": "2026-04-05T12:13:37.286512+00:00",
+    "assigned_at": "05.04.2026 12:07:28",
+    "acted_at": "05.04.2026 12:13:37",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 66,
@@ -496,12 +461,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:07:28.977899+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:07:28",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 67,
@@ -510,12 +474,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:10:24.395707+00:00",
-    "acted_at": "2026-04-05T12:13:38.064563+00:00",
+    "assigned_at": "05.04.2026 12:10:24",
+    "acted_at": "05.04.2026 12:13:38",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 68,
@@ -524,12 +487,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:10:24.475037+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:10:24",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 69,
@@ -538,12 +500,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:10:53.531712+00:00",
-    "acted_at": "2026-04-05T12:11:42.699852+00:00",
+    "assigned_at": "05.04.2026 12:10:53",
+    "acted_at": "05.04.2026 12:11:42",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 70,
@@ -552,12 +513,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:10:53.592317+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:10:53",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 71,
@@ -566,12 +526,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:11:30.104786+00:00",
-    "acted_at": "2026-04-05T12:11:41.536083+00:00",
+    "assigned_at": "05.04.2026 12:11:30",
+    "acted_at": "05.04.2026 12:11:41",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 72,
@@ -580,12 +539,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:11:30.185036+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:11:30",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 73,
@@ -594,12 +552,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:13:21.254938+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:13:21",
+    "acted_at": "",
     "comment": "",
     "sla_days": 3,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 74,
@@ -608,12 +565,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:13:21.317193+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:13:21",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 75,
@@ -622,12 +578,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:17:29.611710+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:17:29",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 76,
@@ -636,12 +591,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:17:29.691306+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:17:29",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 77,
@@ -650,12 +604,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:19:00.776003+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:19:00",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 78,
@@ -664,12 +617,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:19:00.837031+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:19:00",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 79,
@@ -678,12 +630,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:20:44.782058+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:20:44",
+    "acted_at": "",
     "comment": "",
     "sla_days": 3,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 80,
@@ -692,12 +643,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:20:44.843930+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:20:44",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 81,
@@ -706,12 +656,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:22:13.163241+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:22:13",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 82,
@@ -720,12 +669,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:22:13.242064+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:22:13",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 83,
@@ -734,12 +682,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:23:55.695491+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:23:55",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 84,
@@ -748,12 +695,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:23:55.759834+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:23:55",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 85,
@@ -762,12 +708,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:27:16.236590+00:00",
-    "acted_at": "2026-04-05T12:27:47.615448+00:00",
+    "assigned_at": "05.04.2026 12:27:16",
+    "acted_at": "05.04.2026 12:27:47",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 86,
@@ -776,12 +721,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:27:16.297260+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:27:16",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 87,
@@ -790,12 +734,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:27:37.462548+00:00",
-    "acted_at": "2026-04-05T12:28:04.473504+00:00",
+    "assigned_at": "05.04.2026 12:27:37",
+    "acted_at": "05.04.2026 12:28:04",
     "comment": "Автоматически (руководитель без начальника)",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 88,
@@ -804,12 +747,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:27:37.524803+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:27:37",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 89,
@@ -818,12 +760,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:28:53.116060+00:00",
-    "acted_at": "2026-04-05T14:31:15.154782+00:00",
+    "assigned_at": "05.04.2026 12:28:53",
+    "acted_at": "05.04.2026 14:31:15",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.08,
-    "is_overdue": false
+    "duration_days": 0.08
   },
   {
     "id": 90,
@@ -832,12 +773,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T12:28:53.232647+00:00",
-    "acted_at": "2026-04-13T06:16:42.096478+00:00",
+    "assigned_at": "05.04.2026 12:28:53",
+    "acted_at": "13.04.2026 06:16:42",
     "comment": "",
     "sla_days": 1,
-    "duration_days": 7.74,
-    "is_overdue": false
+    "duration_days": 7.74
   },
   {
     "id": 91,
@@ -846,12 +786,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:28:53.530204+00:00",
-    "acted_at": "2026-04-05T14:31:25.557883+00:00",
+    "assigned_at": "05.04.2026 12:28:53",
+    "acted_at": "05.04.2026 14:31:25",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.09,
-    "is_overdue": false
+    "duration_days": 0.09
   },
   {
     "id": 92,
@@ -860,12 +799,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T12:28:53.634174+00:00",
-    "acted_at": "2026-04-13T06:16:42.941899+00:00",
+    "assigned_at": "05.04.2026 12:28:53",
+    "acted_at": "13.04.2026 06:16:42",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 7.74,
-    "is_overdue": false
+    "duration_days": 7.74
   },
   {
     "id": 93,
@@ -874,12 +812,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:28:53.928510+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 12:28:53",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.56,
-    "is_overdue": false
+    "duration_days": -41.56
   },
   {
     "id": 94,
@@ -888,12 +825,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:28:54.056484+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 12:28:54",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.56,
-    "is_overdue": false
+    "duration_days": -41.56
   },
   {
     "id": 95,
@@ -902,12 +838,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:29:27.438408+00:00",
-    "acted_at": "2026-04-05T14:31:15.761539+00:00",
+    "assigned_at": "05.04.2026 12:29:27",
+    "acted_at": "05.04.2026 14:31:15",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.08,
-    "is_overdue": false
+    "duration_days": 0.08
   },
   {
     "id": 96,
@@ -916,12 +851,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T12:29:27.587737+00:00",
-    "acted_at": "2026-04-13T06:16:43.576598+00:00",
+    "assigned_at": "05.04.2026 12:29:27",
+    "acted_at": "13.04.2026 06:16:43",
     "comment": "",
     "sla_days": 1,
-    "duration_days": 7.74,
-    "is_overdue": false
+    "duration_days": 7.74
   },
   {
     "id": 97,
@@ -930,12 +864,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:29:27.798334+00:00",
-    "acted_at": "2026-04-05T14:31:25.934244+00:00",
+    "assigned_at": "05.04.2026 12:29:27",
+    "acted_at": "05.04.2026 14:31:25",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.08,
-    "is_overdue": false
+    "duration_days": 0.08
   },
   {
     "id": 98,
@@ -944,12 +877,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T12:29:27.889029+00:00",
-    "acted_at": "2026-04-13T06:16:44.030495+00:00",
+    "assigned_at": "05.04.2026 12:29:27",
+    "acted_at": "13.04.2026 06:16:44",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 7.74,
-    "is_overdue": false
+    "duration_days": 7.74
   },
   {
     "id": 99,
@@ -958,12 +890,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:29:28.134264+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 12:29:28",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.56,
-    "is_overdue": false
+    "duration_days": -41.56
   },
   {
     "id": 100,
@@ -972,12 +903,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:29:28.265916+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 12:29:28",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.56,
-    "is_overdue": false
+    "duration_days": -41.56
   },
   {
     "id": 101,
@@ -986,12 +916,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:30:17.327455+00:00",
-    "acted_at": "2026-04-05T14:31:16.117577+00:00",
+    "assigned_at": "05.04.2026 12:30:17",
+    "acted_at": "05.04.2026 14:31:16",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.08,
-    "is_overdue": false
+    "duration_days": 0.08
   },
   {
     "id": 102,
@@ -1000,12 +929,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T12:30:17.386813+00:00",
-    "acted_at": "2026-04-13T06:16:44.502685+00:00",
+    "assigned_at": "05.04.2026 12:30:17",
+    "acted_at": "13.04.2026 06:16:44",
     "comment": "",
     "sla_days": 1,
-    "duration_days": 7.74,
-    "is_overdue": false
+    "duration_days": 7.74
   },
   {
     "id": 103,
@@ -1014,12 +942,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:30:17.509981+00:00",
-    "acted_at": "2026-04-05T14:31:26.275982+00:00",
+    "assigned_at": "05.04.2026 12:30:17",
+    "acted_at": "05.04.2026 14:31:26",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.08,
-    "is_overdue": false
+    "duration_days": 0.08
   },
   {
     "id": 104,
@@ -1028,12 +955,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T12:30:17.569446+00:00",
-    "acted_at": "2026-04-13T06:16:45.116724+00:00",
+    "assigned_at": "05.04.2026 12:30:17",
+    "acted_at": "13.04.2026 06:16:45",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 7.74,
-    "is_overdue": false
+    "duration_days": 7.74
   },
   {
     "id": 105,
@@ -1042,12 +968,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:30:17.710125+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 12:30:17",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.56,
-    "is_overdue": false
+    "duration_days": -41.56
   },
   {
     "id": 106,
@@ -1056,12 +981,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:30:17.772457+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 12:30:17",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.56,
-    "is_overdue": false
+    "duration_days": -41.56
   },
   {
     "id": 107,
@@ -1070,12 +994,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T12:40:04.977010+00:00",
-    "acted_at": "2026-04-05T14:31:17.043046+00:00",
+    "assigned_at": "05.04.2026 12:40:04",
+    "acted_at": "05.04.2026 14:31:17",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.08,
-    "is_overdue": false
+    "duration_days": 0.08
   },
   {
     "id": 108,
@@ -1084,12 +1007,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:40:05.035631+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:40:05",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 109,
@@ -1098,12 +1020,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:40:05.159637+00:00",
-    "acted_at": "2026-04-05T14:31:26.610195+00:00",
+    "assigned_at": "05.04.2026 12:40:05",
+    "acted_at": "05.04.2026 14:31:26",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.08,
-    "is_overdue": false
+    "duration_days": 0.08
   },
   {
     "id": 110,
@@ -1112,12 +1033,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T12:40:05.218659+00:00",
-    "acted_at": "2026-04-13T06:16:45.701702+00:00",
+    "assigned_at": "05.04.2026 12:40:05",
+    "acted_at": "13.04.2026 06:16:45",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 7.73,
-    "is_overdue": false
+    "duration_days": 7.73
   },
   {
     "id": 111,
@@ -1126,12 +1046,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:40:05.360625+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 12:40:05",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.57,
-    "is_overdue": false
+    "duration_days": -41.57
   },
   {
     "id": 112,
@@ -1140,12 +1059,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:40:05.421783+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 12:40:05",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.57,
-    "is_overdue": false
+    "duration_days": -41.57
   },
   {
     "id": 113,
@@ -1154,12 +1072,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T12:43:26.410381+00:00",
-    "acted_at": "2026-04-05T12:43:26.625869+00:00",
+    "assigned_at": "05.04.2026 12:43:26",
+    "acted_at": "05.04.2026 12:43:26",
     "comment": "Автоматически (руководитель без начальника)",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 114,
@@ -1168,12 +1085,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T12:43:26.471174+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 12:43:26",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 115,
@@ -1182,12 +1098,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T14:32:13.715301+00:00",
-    "acted_at": "2026-04-05T14:33:57.555489+00:00",
+    "assigned_at": "05.04.2026 14:32:13",
+    "acted_at": "05.04.2026 14:33:57",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 116,
@@ -1196,12 +1111,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T14:32:13.793982+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 14:32:13",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 117,
@@ -1210,12 +1124,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T14:32:48.335489+00:00",
-    "acted_at": "2026-04-05T14:34:09.378767+00:00",
+    "assigned_at": "05.04.2026 14:32:48",
+    "acted_at": "05.04.2026 14:34:09",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 118,
@@ -1224,12 +1137,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T14:32:48.415422+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 14:32:48",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 119,
@@ -1238,12 +1150,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T14:33:14.984237+00:00",
-    "acted_at": "2026-04-05T14:35:08.120170+00:00",
+    "assigned_at": "05.04.2026 14:33:14",
+    "acted_at": "05.04.2026 14:35:08",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 120,
@@ -1252,12 +1163,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T14:33:15.046949+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 14:33:15",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 121,
@@ -1266,12 +1176,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T14:33:49.446149+00:00",
-    "acted_at": "2026-04-05T14:36:06.105014+00:00",
+    "assigned_at": "05.04.2026 14:33:49",
+    "acted_at": "05.04.2026 14:36:06",
     "comment": "Автоматически (руководитель без начальника)",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 122,
@@ -1280,12 +1189,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T14:33:49.524940+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 14:33:49",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 123,
@@ -1294,12 +1202,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T14:34:51.787722+00:00",
-    "acted_at": "2026-04-13T06:17:14.888802+00:00",
+    "assigned_at": "05.04.2026 14:34:51",
+    "acted_at": "13.04.2026 06:17:14",
     "comment": "Автоматически (руководитель без начальника)",
     "sla_days": 3,
-    "duration_days": 7.65,
-    "is_overdue": false
+    "duration_days": 7.65
   },
   {
     "id": 124,
@@ -1308,12 +1215,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T14:34:51.850334+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 14:34:51",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 125,
@@ -1322,12 +1228,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T14:35:26.933059+00:00",
-    "acted_at": "2026-04-05T14:36:04.308932+00:00",
+    "assigned_at": "05.04.2026 14:35:26",
+    "acted_at": "05.04.2026 14:36:04",
     "comment": "Автоматически (руководитель без начальника)",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 126,
@@ -1336,12 +1241,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T14:35:27.012618+00:00",
-    "acted_at": "2026-04-13T06:17:12.464458+00:00",
+    "assigned_at": "05.04.2026 14:35:27",
+    "acted_at": "13.04.2026 06:17:12",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 7.65,
-    "is_overdue": false
+    "duration_days": 7.65
   },
   {
     "id": 127,
@@ -1350,12 +1254,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T14:36:33.937070+00:00",
-    "acted_at": "2026-04-05T14:36:48.029107+00:00",
+    "assigned_at": "05.04.2026 14:36:33",
+    "acted_at": "05.04.2026 14:36:48",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 128,
@@ -1364,12 +1267,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T14:36:33.999140+00:00",
-    "acted_at": "2026-04-05T14:37:05.020846+00:00",
+    "assigned_at": "05.04.2026 14:36:33",
+    "acted_at": "05.04.2026 14:37:05",
     "comment": "",
     "sla_days": 1,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 129,
@@ -1378,12 +1280,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T14:37:54.369293+00:00",
-    "acted_at": "2026-04-05T14:41:32.793408+00:00",
+    "assigned_at": "05.04.2026 14:37:54",
+    "acted_at": "05.04.2026 14:41:32",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 130,
@@ -1392,12 +1293,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T14:37:54.479513+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 14:37:54",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 131,
@@ -1406,12 +1306,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T14:37:54.692442+00:00",
-    "acted_at": "2026-04-05T14:41:53.086751+00:00",
+    "assigned_at": "05.04.2026 14:37:54",
+    "acted_at": "05.04.2026 14:41:53",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 132,
@@ -1420,12 +1319,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T14:37:54.824547+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 14:37:54",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 133,
@@ -1434,12 +1332,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T14:37:55.111812+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 14:37:55",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.65,
-    "is_overdue": false
+    "duration_days": -41.65
   },
   {
     "id": 134,
@@ -1448,12 +1345,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T14:37:55.244761+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 14:37:55",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.65,
-    "is_overdue": false
+    "duration_days": -41.65
   },
   {
     "id": 135,
@@ -1462,12 +1358,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T14:41:02.319137+00:00",
-    "acted_at": "2026-04-05T14:43:12.927024+00:00",
+    "assigned_at": "05.04.2026 14:41:02",
+    "acted_at": "05.04.2026 14:43:12",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 136,
@@ -1476,12 +1371,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T14:41:02.397977+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 14:41:02",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 137,
@@ -1490,12 +1384,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T14:42:28.957188+00:00",
-    "acted_at": "2026-04-05T14:43:15.080921+00:00",
+    "assigned_at": "05.04.2026 14:42:28",
+    "acted_at": "05.04.2026 14:43:15",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 138,
@@ -1504,12 +1397,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T14:42:29.022663+00:00",
-    "acted_at": "2026-04-05T14:43:43.354902+00:00",
+    "assigned_at": "05.04.2026 14:42:29",
+    "acted_at": "05.04.2026 14:43:43",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 139,
@@ -1518,12 +1410,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T20:23:44.500060+00:00",
-    "acted_at": "2026-04-05T20:32:10.975094+00:00",
+    "assigned_at": "05.04.2026 20:23:44",
+    "acted_at": "05.04.2026 20:32:10",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.01,
-    "is_overdue": false
+    "duration_days": 0.01
   },
   {
     "id": 140,
@@ -1532,12 +1423,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T20:23:44.610658+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 20:23:44",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 141,
@@ -1546,12 +1436,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T20:23:44.803995+00:00",
-    "acted_at": "2026-04-05T20:32:19.060239+00:00",
+    "assigned_at": "05.04.2026 20:23:44",
+    "acted_at": "05.04.2026 20:32:19",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.01,
-    "is_overdue": false
+    "duration_days": 0.01
   },
   {
     "id": 142,
@@ -1560,12 +1449,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T20:23:45.037319+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 20:23:45",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 143,
@@ -1574,12 +1462,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T20:23:45.488228+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 20:23:45",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.89,
-    "is_overdue": false
+    "duration_days": -41.89
   },
   {
     "id": 144,
@@ -1588,12 +1475,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T20:23:45.584351+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 20:23:45",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.89,
-    "is_overdue": false
+    "duration_days": -41.89
   },
   {
     "id": 145,
@@ -1602,12 +1488,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T20:29:10.603407+00:00",
-    "acted_at": "2026-04-05T20:32:11.576827+00:00",
+    "assigned_at": "05.04.2026 20:29:10",
+    "acted_at": "05.04.2026 20:32:11",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 146,
@@ -1616,12 +1501,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T20:29:10.685059+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 20:29:10",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 147,
@@ -1630,12 +1514,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T20:29:10.927535+00:00",
-    "acted_at": "2026-04-05T20:32:19.598474+00:00",
+    "assigned_at": "05.04.2026 20:29:10",
+    "acted_at": "05.04.2026 20:32:19",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 148,
@@ -1644,12 +1527,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T20:29:11.093799+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 20:29:11",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 149,
@@ -1658,12 +1540,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T20:29:11.359498+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 20:29:11",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.9,
-    "is_overdue": false
+    "duration_days": -41.9
   },
   {
     "id": 150,
@@ -1672,12 +1553,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T20:29:11.474711+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 20:29:11",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.9,
-    "is_overdue": false
+    "duration_days": -41.9
   },
   {
     "id": 151,
@@ -1686,12 +1566,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T20:31:30.961787+00:00",
-    "acted_at": "2026-04-05T20:32:03.159996+00:00",
+    "assigned_at": "05.04.2026 20:31:30",
+    "acted_at": "05.04.2026 20:32:03",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 152,
@@ -1700,12 +1579,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T20:31:31.096432+00:00",
-    "acted_at": "2026-04-05T20:32:36.811168+00:00",
+    "assigned_at": "05.04.2026 20:31:31",
+    "acted_at": "05.04.2026 20:32:36",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 153,
@@ -1714,12 +1592,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T20:46:43.187825+00:00",
-    "acted_at": "2026-04-18T14:20:21.442323+00:00",
+    "assigned_at": "05.04.2026 20:46:43",
+    "acted_at": "18.04.2026 14:20:21",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 12.73,
-    "is_overdue": false
+    "duration_days": 12.73
   },
   {
     "id": 154,
@@ -1728,12 +1605,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T20:46:43.248309+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 20:46:43",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 155,
@@ -1742,12 +1618,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-05T20:46:43.371381+00:00",
-    "acted_at": "2026-04-06T07:23:31.478992+00:00",
+    "assigned_at": "05.04.2026 20:46:43",
+    "acted_at": "06.04.2026 07:23:31",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.44,
-    "is_overdue": false
+    "duration_days": 0.44
   },
   {
     "id": 156,
@@ -1756,12 +1631,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-05T20:46:43.431315+00:00",
-    "acted_at": null,
+    "assigned_at": "05.04.2026 20:46:43",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 157,
@@ -1770,12 +1644,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T20:46:43.573358+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 20:46:43",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.91,
-    "is_overdue": false
+    "duration_days": -41.91
   },
   {
     "id": 158,
@@ -1784,12 +1657,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-05T20:46:43.630563+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "05.04.2026 20:46:43",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.91,
-    "is_overdue": false
+    "duration_days": -41.91
   },
   {
     "id": 159,
@@ -1798,12 +1670,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-06T05:50:55.896099+00:00",
-    "acted_at": "2026-04-06T05:53:18.704913+00:00",
+    "assigned_at": "06.04.2026 05:50:55",
+    "acted_at": "06.04.2026 05:53:18",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 160,
@@ -1812,12 +1683,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-06T05:50:55.957784+00:00",
-    "acted_at": "2026-04-06T05:53:53.209896+00:00",
+    "assigned_at": "06.04.2026 05:50:55",
+    "acted_at": "06.04.2026 05:53:53",
     "comment": "",
     "sla_days": 1,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 161,
@@ -1826,12 +1696,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-06T05:51:33.427903+00:00",
-    "acted_at": "2026-04-06T05:53:16.165875+00:00",
+    "assigned_at": "06.04.2026 05:51:33",
+    "acted_at": "06.04.2026 05:53:16",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 162,
@@ -1840,12 +1709,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-06T05:51:33.490098+00:00",
-    "acted_at": "2026-04-06T05:53:48.107485+00:00",
+    "assigned_at": "06.04.2026 05:51:33",
+    "acted_at": "06.04.2026 05:53:48",
     "comment": "",
     "sla_days": 1,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 163,
@@ -1854,12 +1722,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-06T05:52:14.594193+00:00",
-    "acted_at": "2026-04-06T05:53:20.988282+00:00",
+    "assigned_at": "06.04.2026 05:52:14",
+    "acted_at": "06.04.2026 05:53:20",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 164,
@@ -1868,12 +1735,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-06T05:52:14.658957+00:00",
-    "acted_at": null,
+    "assigned_at": "06.04.2026 05:52:14",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 165,
@@ -1882,12 +1748,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-06T06:49:43.655039+00:00",
-    "acted_at": "2026-04-18T14:20:22.032182+00:00",
+    "assigned_at": "06.04.2026 06:49:43",
+    "acted_at": "18.04.2026 14:20:22",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 12.31,
-    "is_overdue": false
+    "duration_days": 12.31
   },
   {
     "id": 166,
@@ -1896,12 +1761,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-06T06:49:43.718798+00:00",
-    "acted_at": null,
+    "assigned_at": "06.04.2026 06:49:43",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 167,
@@ -1910,12 +1774,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-06T06:49:43.969584+00:00",
-    "acted_at": "2026-04-06T07:23:32.355644+00:00",
+    "assigned_at": "06.04.2026 06:49:43",
+    "acted_at": "06.04.2026 07:23:32",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.02,
-    "is_overdue": false
+    "duration_days": 0.02
   },
   {
     "id": 168,
@@ -1924,12 +1787,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-06T06:49:44.139170+00:00",
-    "acted_at": "2026-04-13T06:16:39.573544+00:00",
+    "assigned_at": "06.04.2026 06:49:44",
+    "acted_at": "13.04.2026 06:16:39",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 6.98,
-    "is_overdue": false
+    "duration_days": 6.98
   },
   {
     "id": 169,
@@ -1938,12 +1800,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-06T06:49:44.410020+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "06.04.2026 06:49:44",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -42.33,
-    "is_overdue": false
+    "duration_days": -42.33
   },
   {
     "id": 170,
@@ -1952,12 +1813,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-06T06:49:44.490779+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "06.04.2026 06:49:44",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -42.33,
-    "is_overdue": false
+    "duration_days": -42.33
   },
   {
     "id": 171,
@@ -1966,12 +1826,11 @@
     "role": "manager",
     "approver_tab_number": "010",
     "status": "rejected",
-    "assigned_at": "2026-04-06T07:20:45.652551+00:00",
-    "acted_at": "2026-04-06T07:21:07.569284+00:00",
+    "assigned_at": "06.04.2026 07:20:45",
+    "acted_at": "06.04.2026 07:21:07",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 172,
@@ -1980,12 +1839,11 @@
     "role": "hr",
     "approver_tab_number": "hr_001",
     "status": "rejected",
-    "assigned_at": "2026-04-06T07:20:45.767065+00:00",
-    "acted_at": "2026-04-06T07:21:22.776994+00:00",
+    "assigned_at": "06.04.2026 07:20:45",
+    "acted_at": "06.04.2026 07:21:22",
     "comment": "",
     "sla_days": 1,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 173,
@@ -1994,12 +1852,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-06T07:31:42.350132+00:00",
-    "acted_at": "2026-04-06T07:31:55.526837+00:00",
+    "assigned_at": "06.04.2026 07:31:42",
+    "acted_at": "06.04.2026 07:31:55",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 174,
@@ -2008,12 +1865,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-06T07:31:42.428456+00:00",
-    "acted_at": "2026-04-06T07:32:05.301772+00:00",
+    "assigned_at": "06.04.2026 07:31:42",
+    "acted_at": "06.04.2026 07:32:05",
     "comment": "",
     "sla_days": 1,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 175,
@@ -2022,12 +1878,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-13T06:11:11.622799+00:00",
-    "acted_at": "2026-04-13T06:13:37.965320+00:00",
+    "assigned_at": "13.04.2026 06:11:11",
+    "acted_at": "13.04.2026 06:13:37",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 176,
@@ -2036,12 +1891,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-13T06:11:11.691677+00:00",
-    "acted_at": "2026-04-13T06:17:13.572548+00:00",
+    "assigned_at": "13.04.2026 06:11:11",
+    "acted_at": "13.04.2026 06:17:13",
     "comment": "",
     "sla_days": 1,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 177,
@@ -2050,12 +1904,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-13T06:15:12.172721+00:00",
-    "acted_at": "2026-04-13T06:15:12.356825+00:00",
+    "assigned_at": "13.04.2026 06:15:12",
+    "acted_at": "13.04.2026 06:15:12",
     "comment": "Автоматически (руководитель без начальника)",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 178,
@@ -2064,12 +1917,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-13T06:15:12.235005+00:00",
-    "acted_at": null,
+    "assigned_at": "13.04.2026 06:15:12",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 179,
@@ -2078,12 +1930,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-18T14:17:25.839848+00:00",
-    "acted_at": "2026-04-26T19:58:22.691570+00:00",
+    "assigned_at": "18.04.2026 14:17:25",
+    "acted_at": "26.04.2026 19:58:22",
     "comment": "Проверка)\n",
     "sla_days": 2,
-    "duration_days": 8.24,
-    "is_overdue": false
+    "duration_days": 8.24
   },
   {
     "id": 180,
@@ -2092,12 +1943,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-18T14:17:25.919263+00:00",
-    "acted_at": null,
+    "assigned_at": "18.04.2026 14:17:25",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 181,
@@ -2106,12 +1956,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-26T14:34:41.262613+00:00",
-    "acted_at": "2026-04-26T19:44:18.490410+00:00",
+    "assigned_at": "26.04.2026 14:34:41",
+    "acted_at": "26.04.2026 19:44:18",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.22,
-    "is_overdue": false
+    "duration_days": 0.22
   },
   {
     "id": 182,
@@ -2120,12 +1969,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-26T14:34:41.342396+00:00",
-    "acted_at": null,
+    "assigned_at": "26.04.2026 14:34:41",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 183,
@@ -2134,12 +1982,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-26T14:34:41.600884+00:00",
-    "acted_at": "2026-04-26T20:00:30.187760+00:00",
+    "assigned_at": "26.04.2026 14:34:41",
+    "acted_at": "26.04.2026 20:00:30",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.23,
-    "is_overdue": false
+    "duration_days": 0.23
   },
   {
     "id": 184,
@@ -2148,12 +1995,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-26T14:34:41.709550+00:00",
-    "acted_at": "2026-04-27T08:15:10.137231+00:00",
+    "assigned_at": "26.04.2026 14:34:41",
+    "acted_at": "27.04.2026 08:15:10",
     "comment": "проверка\n",
     "sla_days": 2,
-    "duration_days": 0.74,
-    "is_overdue": false
+    "duration_days": 0.74
   },
   {
     "id": 185,
@@ -2162,12 +2008,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-26T14:34:41.961819+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "26.04.2026 14:34:41",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -62.65,
-    "is_overdue": false
+    "duration_days": -62.65
   },
   {
     "id": 186,
@@ -2176,12 +2021,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-26T14:34:42.125782+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "26.04.2026 14:34:42",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -62.65,
-    "is_overdue": false
+    "duration_days": -62.65
   },
   {
     "id": 187,
@@ -2190,12 +2034,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-26T19:43:57.318703+00:00",
-    "acted_at": "2026-04-26T21:06:17.611005+00:00",
+    "assigned_at": "26.04.2026 19:43:57",
+    "acted_at": "26.04.2026 21:06:17",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.06,
-    "is_overdue": false
+    "duration_days": 0.06
   },
   {
     "id": 188,
@@ -2204,12 +2047,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-26T19:43:57.410203+00:00",
-    "acted_at": null,
+    "assigned_at": "26.04.2026 19:43:57",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 189,
@@ -2218,12 +2060,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-26T19:58:59.650208+00:00",
-    "acted_at": "2026-04-26T20:00:37.561471+00:00",
+    "assigned_at": "26.04.2026 19:58:59",
+    "acted_at": "26.04.2026 20:00:37",
     "comment": "проверка2",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 190,
@@ -2232,12 +2073,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-26T19:58:59.728966+00:00",
-    "acted_at": null,
+    "assigned_at": "26.04.2026 19:58:59",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 191,
@@ -2246,12 +2086,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-26T20:23:45.214952+00:00",
-    "acted_at": "2026-04-26T20:24:09.879284+00:00",
+    "assigned_at": "26.04.2026 20:23:45",
+    "acted_at": "26.04.2026 20:24:09",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 192,
@@ -2260,12 +2099,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-26T20:23:45.259875+00:00",
-    "acted_at": "2026-04-26T20:24:42.995287+00:00",
+    "assigned_at": "26.04.2026 20:23:45",
+    "acted_at": "26.04.2026 20:24:42",
     "comment": "-",
     "sla_days": 1,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 193,
@@ -2274,12 +2112,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-26T21:06:50.877435+00:00",
-    "acted_at": null,
+    "assigned_at": "26.04.2026 21:06:50",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 194,
@@ -2288,12 +2125,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-26T21:06:50.940675+00:00",
-    "acted_at": null,
+    "assigned_at": "26.04.2026 21:06:50",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 195,
@@ -2302,12 +2138,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-26T21:11:09.684789+00:00",
-    "acted_at": "2026-04-27T06:15:37.001338+00:00",
+    "assigned_at": "26.04.2026 21:11:09",
+    "acted_at": "27.04.2026 06:15:37",
     "comment": "Дедлайны горят",
     "sla_days": 2,
-    "duration_days": 0.38,
-    "is_overdue": false
+    "duration_days": 0.38
   },
   {
     "id": 196,
@@ -2316,12 +2151,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-26T21:11:09.748709+00:00",
-    "acted_at": null,
+    "assigned_at": "26.04.2026 21:11:09",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 197,
@@ -2330,12 +2164,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-26T21:11:19.535898+00:00",
-    "acted_at": "2026-04-27T06:23:10.511662+00:00",
+    "assigned_at": "26.04.2026 21:11:19",
+    "acted_at": "27.04.2026 06:23:10",
     "comment": "tfgyhj",
     "sla_days": 3,
-    "duration_days": 0.38,
-    "is_overdue": false
+    "duration_days": 0.38
   },
   {
     "id": 198,
@@ -2344,12 +2177,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-26T21:11:19.594716+00:00",
-    "acted_at": null,
+    "assigned_at": "26.04.2026 21:11:19",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 199,
@@ -2358,12 +2190,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-27T06:22:30.094010+00:00",
-    "acted_at": "2026-04-27T06:23:20.238640+00:00",
+    "assigned_at": "27.04.2026 06:22:30",
+    "acted_at": "27.04.2026 06:23:20",
     "comment": "еще проверка",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 200,
@@ -2372,12 +2203,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T06:22:30.158741+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 06:22:30",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 201,
@@ -2386,12 +2216,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-27T06:22:38.438453+00:00",
-    "acted_at": "2026-04-27T06:24:29.496406+00:00",
+    "assigned_at": "27.04.2026 06:22:38",
+    "acted_at": "27.04.2026 06:24:29",
     "comment": "йцукен\nуывнарпо",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 202,
@@ -2400,12 +2229,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T06:22:38.500405+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 06:22:38",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 203,
@@ -2414,12 +2242,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T06:22:49.559746+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 06:22:49",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 204,
@@ -2428,12 +2255,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T06:22:49.623746+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 06:22:49",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 205,
@@ -2442,12 +2268,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:21:31.875689+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:21:31",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 206,
@@ -2456,12 +2281,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:21:32.022472+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:21:32",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 207,
@@ -2470,12 +2294,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:21:48.027895+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:21:48",
+    "acted_at": "",
     "comment": "",
     "sla_days": 3,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 208,
@@ -2484,12 +2307,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:21:48.241345+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:21:48",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 209,
@@ -2498,12 +2320,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:22:01.388575+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:22:01",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 210,
@@ -2512,12 +2333,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:22:01.514697+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:22:01",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 211,
@@ -2526,12 +2346,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:22:47.540823+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:22:47",
+    "acted_at": "",
     "comment": "",
     "sla_days": 3,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 212,
@@ -2540,12 +2359,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:22:47.604275+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:22:47",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 213,
@@ -2554,12 +2372,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:22:55.936309+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:22:55",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 214,
@@ -2568,12 +2385,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:22:56.017711+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:22:56",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 215,
@@ -2582,12 +2398,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:23:27.404722+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:23:27",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 216,
@@ -2596,12 +2411,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:23:27.466659+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:23:27",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 217,
@@ -2610,12 +2424,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:23:37.352438+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:23:37",
+    "acted_at": "",
     "comment": "",
     "sla_days": 3,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 218,
@@ -2624,12 +2437,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:23:37.417762+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:23:37",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 219,
@@ -2638,12 +2450,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:24:09.766504+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:24:09",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 220,
@@ -2652,12 +2463,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:24:09.832441+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:24:09",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 221,
@@ -2666,12 +2476,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:24:17.180783+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:24:17",
+    "acted_at": "",
     "comment": "",
     "sla_days": 3,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 222,
@@ -2680,12 +2489,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:24:17.242118+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:24:17",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 223,
@@ -2694,12 +2502,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:24:29.860212+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:24:29",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 224,
@@ -2708,12 +2515,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:24:29.924769+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:24:29",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 225,
@@ -2722,12 +2528,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:43:53.922694+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:43:53",
+    "acted_at": "",
     "comment": "",
     "sla_days": 3,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 226,
@@ -2736,12 +2541,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T07:43:53.983352+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 07:43:53",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 227,
@@ -2750,12 +2554,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-27T08:16:17.472822+00:00",
-    "acted_at": "2026-04-27T08:16:57.070428+00:00",
+    "assigned_at": "27.04.2026 08:16:17",
+    "acted_at": "27.04.2026 08:16:57",
     "comment": "проверка",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 228,
@@ -2764,12 +2567,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-04-27T08:16:17.537964+00:00",
-    "acted_at": null,
+    "assigned_at": "27.04.2026 08:16:17",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 229,
@@ -2778,12 +2580,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-04-27T08:16:26.841823+00:00",
-    "acted_at": "2026-04-27T08:16:58.571617+00:00",
+    "assigned_at": "27.04.2026 08:16:26",
+    "acted_at": "27.04.2026 08:16:58",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 230,
@@ -2792,12 +2593,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-04-27T08:16:26.911805+00:00",
-    "acted_at": "2026-04-27T08:17:24.805163+00:00",
+    "assigned_at": "27.04.2026 08:16:26",
+    "acted_at": "27.04.2026 08:17:24",
     "comment": "проверка от hr\n",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 231,
@@ -2806,12 +2606,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-05-25T05:47:25.493314+00:00",
-    "acted_at": "2026-05-25T05:48:03.387452+00:00",
+    "assigned_at": "25.05.2026 05:47:25",
+    "acted_at": "25.05.2026 05:48:03",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 232,
@@ -2820,12 +2619,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "rejected",
-    "assigned_at": "2026-05-25T05:47:25.556157+00:00",
-    "acted_at": "2026-05-25T05:49:06.268359+00:00",
+    "assigned_at": "25.05.2026 05:47:25",
+    "acted_at": "25.05.2026 05:49:06",
     "comment": "Проверка\n",
     "sla_days": 1,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 233,
@@ -2834,12 +2632,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-05-25T05:55:41.349237+00:00",
-    "acted_at": "2026-05-25T05:57:06.627159+00:00",
+    "assigned_at": "25.05.2026 05:55:41",
+    "acted_at": "25.05.2026 05:57:06",
     "comment": "",
     "sla_days": 3,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 234,
@@ -2848,12 +2645,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-05-25T05:55:41.410880+00:00",
-    "acted_at": "2026-05-25T05:57:50.941653+00:00",
+    "assigned_at": "25.05.2026 05:55:41",
+    "acted_at": "25.05.2026 05:57:50",
     "comment": "",
     "sla_days": 2,
-    "duration_days": 0.0,
-    "is_overdue": false
+    "duration_days": 0.0
   },
   {
     "id": 235,
@@ -2862,12 +2658,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-05-29T19:05:05.266063+00:00",
-    "acted_at": null,
+    "assigned_at": "29.05.2026 19:05:05",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": false
+    "duration_days": null
   },
   {
     "id": 236,
@@ -2876,12 +2671,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-05-29T19:05:05.325780+00:00",
-    "acted_at": null,
+    "assigned_at": "29.05.2026 19:05:05",
+    "acted_at": "",
     "comment": "",
     "sla_days": 1,
-    "duration_days": null,
-    "is_overdue": true
+    "duration_days": null
   },
   {
     "id": 237,
@@ -2890,12 +2684,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-05-29T19:05:05.443247+00:00",
-    "acted_at": null,
+    "assigned_at": "29.05.2026 19:05:05",
+    "acted_at": "",
     "comment": "",
     "sla_days": 3,
-    "duration_days": null,
-    "is_overdue": false
+    "duration_days": null
   },
   {
     "id": 238,
@@ -2904,12 +2697,11 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "pending",
-    "assigned_at": "2026-05-29T19:05:05.500580+00:00",
-    "acted_at": null,
+    "assigned_at": "29.05.2026 19:05:05",
+    "acted_at": "",
     "comment": "",
     "sla_days": 2,
-    "duration_days": null,
-    "is_overdue": false
+    "duration_days": null
   },
   {
     "id": 239,
@@ -2918,12 +2710,11 @@
     "role": "manager",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-05-29T19:05:05.713054+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "29.05.2026 19:05:05",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -95.84,
-    "is_overdue": false
+    "duration_days": -95.84
   },
   {
     "id": 240,
@@ -2932,11 +2723,10 @@
     "role": "hr",
     "approver_tab_number": null,
     "status": "approved",
-    "assigned_at": "2026-05-29T19:05:05.772552+00:00",
-    "acted_at": "2026-02-22T22:59:04+00:00",
+    "assigned_at": "29.05.2026 19:05:05",
+    "acted_at": "22.02.2026 22:59:04",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -95.84,
-    "is_overdue": false
+    "duration_days": -95.84
   }
 ]

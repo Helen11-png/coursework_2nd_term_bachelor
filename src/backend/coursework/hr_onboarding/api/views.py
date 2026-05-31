@@ -226,6 +226,7 @@ def reject_request(request, pk):
     except Request.DoesNotExist:
         return Response({'error': 'Заявка не найдена'}, status=404)
     rejection_comment = request.data.get('rejection_comment', '')
+    comment = request.data.get('rejection_comment', '')
     req.status = 'rejected'
     req.rejection_comment = rejection_comment
     req.save()

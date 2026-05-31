@@ -1,9 +1,8 @@
 import csv
 from django.core.management.base import BaseCommand
-from django.db.models import OuterRef, Subquery, Avg, F, Q
+from django.db.models import Avg, F
 from employees.models import Employee
 from api.models import Request, Route, ApprovalStep
-from datetime import datetime
 from django.utils import timezone
 import json
 
@@ -13,6 +12,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         # ===== CSV EXPORT =====
+        # 1. employees.csv
         with open('../../../../data/employees.csv', 'w', newline='', encoding='utf-8') as f:
             writer = csv.writer(f)
             writer.writerow(['tab_number', 'full_name', 'department', 'position', 'manager_tab_number'])
@@ -25,26 +25,31 @@ class Command(BaseCommand):
                     emp.manager.tab_number if emp.manager else ''
                 ])
 
+        # 2. requests.csv
         with open('../../../../data/requests.csv', 'w', newline='', encoding='utf-8') as f:
             writer = csv.writer(f)
             writer.writerow([
                 'req_id', 'tab_no', 'type', 'status', 'created_at', 'approved_at',
-                'route_type', 'current_step', 'current_approver_tab', 'is_overdue'
+                'start_date', 'end_date', 'comment', 'is_overdue'
             ])
             for req in Request.objects.all():
+                # Берём комментарий: если есть rejection_comment — его, иначе обычный comment
+                comment_text = req.rejection_comment or req.comment or ''
+
                 writer.writerow([
                     req.id,
                     req.employee.tab_number,
-                    req.request_type,
+                    'Отпуск' if req.request_type == 'vacation' else 'Командировка',
                     req.status,
-                    req.created_at.strftime('%Y-%m-%d %H:%M:%S'),
-                    req.approved_at.strftime('%Y-%m-%d %H:%M:%S') if req.approved_at else '',
-                    req.request_type,
-                    '',
-                    '',
-                    'N'
+                    req.created_at.strftime('%d.%m.%Y') if req.created_at else '',
+                    req.approved_at.strftime('%d.%m.%Y') if req.approved_at else '',
+                    req.start_date.strftime('%d.%m.%Y') if req.start_date else '',
+                    req.end_date.strftime('%d.%m.%Y') if req.end_date else '',
+                    comment_text,
+                    'Нет'
                 ])
 
+        # 3. routes.csv
         with open('../../../../data/routes.csv', 'w', newline='', encoding='utf-8') as f:
             writer = csv.writer(f)
             writer.writerow(['type', 'step_no', 'role', 'sla_days', 'step_description'])
@@ -57,6 +62,7 @@ class Command(BaseCommand):
                     f"Шаг {route.step_number}: {route.role}"
                 ])
 
+        # 4. approval_steps.csv
         with open('../../../../data/approval_steps.csv', 'w', newline='', encoding='utf-8') as f:
             writer = csv.writer(f)
             writer.writerow([
@@ -91,47 +97,46 @@ class Command(BaseCommand):
 
         self.generate_summary_report()
 
-        # ===== JSON EXPORT (ВНУТРИ handle, с правильным отступом!) =====
+        # ===== JSON EXPORT =====
         # 1. employees.json
         employees_data = []
         for emp in Employee.objects.all():
             employees_data.append({
-                "model": "employees.employee",
-                "pk": emp.id,
-                "fields": {
-                    "tab_number": emp.tab_number,
-                    "full_name": emp.full_name,
-                    "department": emp.department,
-                    "position": emp.position,
-                    "role": emp.role,
-                    "manager": emp.manager.id if emp.manager else None
-                }
+                "tab_number": emp.tab_number,
+                "full_name": emp.full_name,
+                "department": emp.department,
+                "position": emp.position,
+                "role": emp.role,
+                "manager_tab_number": emp.manager.tab_number if emp.manager else None
             })
         with open('../../../../data/employees.json', 'w', encoding='utf-8') as f:
             json.dump(employees_data, f, ensure_ascii=False, indent=2)
 
         # 2. requests.json
+        def get_comment(req):
+            if req.rejection_comment:
+                return req.rejection_comment
+            return req.comment or ''
+
         requests_data = []
         for req in Request.objects.all():
             requests_data.append({
                 "id": req.id,
                 "employee_tab_number": req.employee.tab_number,
-                "type": req.request_type,
+                "employee_name": req.employee.full_name,
+                "type": "Отпуск" if req.request_type == 'vacation' else "Командировка",
                 "status": req.status,
-                "created_at": req.created_at.isoformat() if req.created_at else None,
-                "approved_at": req.approved_at.isoformat() if req.approved_at else None,
-                "start_date": req.start_date.isoformat() if req.start_date else None,
-                "end_date": req.end_date.isoformat() if req.end_date else None,
-                "comment": req.comment,
-                "rejection_comment": req.rejection_comment
+                "created_at": req.created_at.strftime('%d.%m.%Y %H:%M:%S') if req.created_at else '',
+                "approved_at": req.approved_at.strftime('%d.%m.%Y') if req.approved_at else '',
+                "start_date": req.start_date.strftime('%d.%m.%Y') if req.start_date else '',
+                "end_date": req.end_date.strftime('%d.%m.%Y') if req.end_date else '',
+                "comment": get_comment(req)  # ← объединённый комментарий
             })
         with open('../../../../data/requests.json', 'w', encoding='utf-8') as f:
             json.dump(requests_data, f, ensure_ascii=False, indent=2)
 
         # 3. routes.json
-        routes_data = list(Route.objects.values(
-            'request_type', 'step_number', 'role', 'sla_days'
-        ))
+        routes_data = list(Route.objects.values('request_type', 'step_number', 'role', 'sla_days'))
         with open('../../../../data/routes.json', 'w', encoding='utf-8') as f:
             json.dump(routes_data, f, ensure_ascii=False, indent=2)
 
@@ -145,14 +150,12 @@ class Command(BaseCommand):
                 "role": step.role,
                 "approver_tab_number": step.approver.tab_number if step.approver else None,
                 "status": step.status,
-                "assigned_at": step.assigned_at.isoformat() if step.assigned_at else None,
-                "acted_at": step.acted_at.isoformat() if step.acted_at else None,
-                "comment": step.comment,
+                "assigned_at": step.assigned_at.strftime('%d.%m.%Y %H:%M:%S') if step.assigned_at else '',
+                "acted_at": step.acted_at.strftime('%d.%m.%Y %H:%M:%S') if step.acted_at else '',
+                "comment": step.comment or '',
                 "sla_days": step.sla_days,
                 "duration_days": round((step.acted_at - step.assigned_at).total_seconds() / 86400,
-                                       2) if step.acted_at and step.assigned_at else None,
-                "is_overdue": (
-                                          timezone.now() - step.assigned_at).total_seconds() / 86400 > step.sla_days if step.assigned_at and step.sla_days and not step.acted_at else False
+                                       2) if step.acted_at and step.assigned_at else None
             })
         with open('../../../../data/approval_steps.json', 'w', encoding='utf-8') as f:
             json.dump(steps_data, f, ensure_ascii=False, indent=2)
@@ -162,25 +165,22 @@ class Command(BaseCommand):
     def generate_summary_report(self):
         with open('../../../../data/kpi_summary.csv', 'w', newline='', encoding='utf-8') as f:
             writer = csv.writer(f)
-            writer.writerow([
-                'metric_name',
-                'value',
-                'unit',
-                'period'
-            ])
+            writer.writerow(['metric_name', 'value', 'unit', 'period'])
+
             total_requests = Request.objects.count()
             approved_requests = Request.objects.filter(status='approved').count()
+
             avg_duration = Request.objects.filter(
-                status='approved',
-                approved_at__isnull=False
-            ).annotate(
-                duration=F('approved_at') - F('created_at')
-            ).aggregate(avg=Avg('duration'))['avg']
+                status='approved', approved_at__isnull=False
+            ).annotate(duration=F('approved_at') - F('created_at')).aggregate(avg=Avg('duration'))['avg']
+
             if avg_duration:
                 avg_duration_days = avg_duration.total_seconds() / 86400
                 writer.writerow(['avg_approval_days', round(avg_duration_days, 2), 'days', 'all_time'])
+
             writer.writerow(['total_requests', total_requests, 'count', 'all_time'])
             writer.writerow(['approved_requests', approved_requests, 'count', 'all_time'])
+
             for req_type in ['vacation', 'business_trip']:
                 count = Request.objects.filter(request_type=req_type).count()
                 writer.writerow([f'{req_type}_requests', count, 'count', 'all_time'])
