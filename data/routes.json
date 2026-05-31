@@ -1,0 +1,26 @@
+[
+  {
+    "request_type": "vacation",
+    "step_number": 1,
+    "role": "manager",
+    "sla_days": 2
+  },
+  {
+    "request_type": "vacation",
+    "step_number": 2,
+    "role": "hr",
+    "sla_days": 1
+  },
+  {
+    "request_type": "business_trip",
+    "step_number": 1,
+    "role": "manager",
+    "sla_days": 3
+  },
+  {
+    "request_type": "business_trip",
+    "step_number": 2,
+    "role": "hr",
+    "sla_days": 2
+  }
+]
