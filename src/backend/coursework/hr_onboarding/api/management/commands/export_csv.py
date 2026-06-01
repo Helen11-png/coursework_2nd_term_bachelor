@@ -34,7 +34,7 @@ class Command(BaseCommand):
             ])
             for req in Request.objects.all():
                 # Берём комментарий: если есть rejection_comment — его, иначе обычный comment
-                comment_text = req.rejection_comment or req.comment or ''
+                comment_text = (req.rejection_comment or req.comment or '').replace('\n', ' ').replace('\r', '')
 
                 writer.writerow([
                     req.id,

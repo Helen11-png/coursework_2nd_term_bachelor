@@ -73,11 +73,9 @@ req_id,tab_no,type,status,created_at,approved_at,start_date,end_date,comment,is_
 93,008,vacation,approved,06.04.2026,06.04.2026,01.04.2026,24.04.2026,,Нет
 94,002,vacation,approved,13.04.2026,13.04.2026,01.04.2026,26.04.2026,,Нет
 95,020,business_trip,in_approval,13.04.2026,,30.03.2026,12.04.2026,,Нет
-96,001,vacation,rejected,18.04.2026,,01.04.2026,02.05.2026,"Проверка)
-",Нет
+96,001,vacation,rejected,18.04.2026,,01.04.2026,02.05.2026,Проверка) ,Нет
 97,001,vacation,rejected,26.04.2026,,,,,Нет
-98,002,business_trip,rejected,26.04.2026,,,,"проверка
-",Нет
+98,002,business_trip,rejected,26.04.2026,,,,проверка ,Нет
 99,003,vacation,approved,26.04.2026,22.02.2026,,,,Нет
 100,022,business_trip,in_approval,26.04.2026,,15.04.2026,30.04.2026,,Нет
 101,002,vacation,rejected,26.04.2026,,01.04.2026,30.04.2026,проверка2,Нет
@@ -86,8 +84,7 @@ req_id,tab_no,type,status,created_at,approved_at,start_date,end_date,comment,is_
 104,021,vacation,rejected,26.04.2026,,08.04.2026,02.05.2026,Дедлайны горят,Нет
 105,021,business_trip,rejected,26.04.2026,,08.04.2026,02.05.2026,tfgyhj,Нет
 106,021,vacation,rejected,27.04.2026,,08.04.2026,11.04.2026,еще проверка,Нет
-107,021,business_trip,rejected,27.04.2026,,31.03.2026,04.04.2026,"йцукен
-уывнарпо",Нет
+107,021,business_trip,rejected,27.04.2026,,31.03.2026,04.04.2026,йцукен уывнарпо,Нет
 108,021,vacation,submitted,27.04.2026,,31.03.2026,24.04.2026,,Нет
 109,019,vacation,submitted,27.04.2026,,01.04.2026,24.04.2026,,Нет
 110,019,business_trip,submitted,27.04.2026,,01.04.2026,18.04.2026,,Нет
@@ -101,10 +98,8 @@ req_id,tab_no,type,status,created_at,approved_at,start_date,end_date,comment,is_
 118,023,vacation,submitted,27.04.2026,,25.02.2026,26.07.2026,,Нет
 119,024,business_trip,submitted,27.04.2026,,08.04.2026,25.04.2026,,Нет
 120,015,business_trip,rejected,27.04.2026,,07.04.2026,24.04.2026,проверка,Нет
-121,015,business_trip,rejected,27.04.2026,,02.04.2026,24.04.2026,"проверка от hr
-",Нет
-122,017,vacation,rejected,25.05.2026,,09.05.2026,09.05.2026,"Проверка
-",Нет
+121,015,business_trip,rejected,27.04.2026,,02.04.2026,24.04.2026,проверка от hr ,Нет
+122,017,vacation,rejected,25.05.2026,,09.05.2026,09.05.2026,Проверка ,Нет
 123,022,business_trip,approved,25.05.2026,25.05.2026,05.05.2026,28.05.2026,,Нет
 124,001,vacation,submitted,29.05.2026,,,,,Нет
 125,002,business_trip,submitted,29.05.2026,,,,,Нет
