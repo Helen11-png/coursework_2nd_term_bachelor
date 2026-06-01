@@ -89,7 +89,7 @@ class Command(BaseCommand):
                     step.status,
                     step.assigned_at.strftime('%Y-%m-%d %H:%M:%S') if step.assigned_at else '',
                     step.acted_at.strftime('%Y-%m-%d %H:%M:%S') if step.acted_at else '',
-                    step.comment or '',
+                    (step.comment or '').replace('\n', ' ').replace('\r', ''),
                     step.sla_days or '',
                     round(duration, 2) if duration is not None else '',
                     'Y' if is_overdue else 'N'
