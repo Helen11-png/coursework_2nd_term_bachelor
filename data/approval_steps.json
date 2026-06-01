@@ -59,10 +59,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 10:49:33",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 11:19:33",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.49
+    "duration_days": 0.02
   },
   {
     "id": 36,
@@ -72,10 +72,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 10:49:33",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 11:19:33",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.49
+    "duration_days": 0.02
   },
   {
     "id": 37,
@@ -163,10 +163,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 10:54:50",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 11:24:50",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.5
+    "duration_days": 0.02
   },
   {
     "id": 44,
@@ -176,10 +176,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 10:54:50",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 11:24:50",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.5
+    "duration_days": 0.02
   },
   {
     "id": 45,
@@ -241,10 +241,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 11:27:05",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 11:57:05",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.52
+    "duration_days": 0.02
   },
   {
     "id": 50,
@@ -254,10 +254,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 11:27:06",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 11:57:06",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.52
+    "duration_days": 0.02
   },
   {
     "id": 51,
@@ -813,10 +813,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 12:28:53",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 12:58:53",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.56
+    "duration_days": 0.02
   },
   {
     "id": 94,
@@ -826,10 +826,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 12:28:54",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 12:58:54",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.56
+    "duration_days": 0.02
   },
   {
     "id": 95,
@@ -891,10 +891,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 12:29:28",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 12:59:28",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.56
+    "duration_days": 0.02
   },
   {
     "id": 100,
@@ -904,10 +904,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 12:29:28",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 12:59:28",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.56
+    "duration_days": 0.02
   },
   {
     "id": 101,
@@ -969,10 +969,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 12:30:17",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 13:00:17",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.56
+    "duration_days": 0.02
   },
   {
     "id": 106,
@@ -982,10 +982,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 12:30:17",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 13:00:17",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.56
+    "duration_days": 0.02
   },
   {
     "id": 107,
@@ -1047,10 +1047,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 12:40:05",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 13:10:05",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.57
+    "duration_days": 0.02
   },
   {
     "id": 112,
@@ -1060,10 +1060,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 12:40:05",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 13:10:05",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.57
+    "duration_days": 0.02
   },
   {
     "id": 113,
@@ -1333,10 +1333,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 14:37:55",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 15:07:55",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.65
+    "duration_days": 0.02
   },
   {
     "id": 134,
@@ -1346,10 +1346,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 14:37:55",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 15:07:55",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.65
+    "duration_days": 0.02
   },
   {
     "id": 135,
@@ -1463,10 +1463,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 20:23:45",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 20:53:45",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.89
+    "duration_days": 0.02
   },
   {
     "id": 144,
@@ -1476,10 +1476,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 20:23:45",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 20:53:45",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.89
+    "duration_days": 0.02
   },
   {
     "id": 145,
@@ -1541,10 +1541,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 20:29:11",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 20:59:11",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.9
+    "duration_days": 0.02
   },
   {
     "id": 150,
@@ -1554,10 +1554,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 20:29:11",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 20:59:11",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.9
+    "duration_days": 0.02
   },
   {
     "id": 151,
@@ -1645,10 +1645,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 20:46:43",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 21:16:43",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -41.91
+    "duration_days": 0.02
   },
   {
     "id": 158,
@@ -1658,10 +1658,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "05.04.2026 20:46:43",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "05.04.2026 21:16:43",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -41.91
+    "duration_days": 0.02
   },
   {
     "id": 159,
@@ -1801,10 +1801,10 @@
     "approver_tab_number": "030",
     "status": "approved",
     "assigned_at": "06.04.2026 06:49:44",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "06.04.2026 07:19:44",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -42.33
+    "duration_days": 0.02
   },
   {
     "id": 170,
@@ -1814,10 +1814,10 @@
     "approver_tab_number": "hr_001",
     "status": "approved",
     "assigned_at": "06.04.2026 06:49:44",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "06.04.2026 07:19:44",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -42.33
+    "duration_days": 0.02
   },
   {
     "id": 171,
@@ -2009,10 +2009,10 @@
     "approver_tab_number": "030",
     "status": "approved",
     "assigned_at": "26.04.2026 14:34:41",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "26.04.2026 15:04:41",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -62.65
+    "duration_days": 0.02
   },
   {
     "id": 186,
@@ -2022,10 +2022,10 @@
     "approver_tab_number": "hr_001",
     "status": "approved",
     "assigned_at": "26.04.2026 14:34:42",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "26.04.2026 15:04:42",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -62.65
+    "duration_days": 0.02
   },
   {
     "id": 187,
@@ -2711,10 +2711,10 @@
     "approver_tab_number": "030",
     "status": "approved",
     "assigned_at": "29.05.2026 19:05:05",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "29.05.2026 19:35:05",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -95.84
+    "duration_days": 0.02
   },
   {
     "id": 240,
@@ -2724,10 +2724,10 @@
     "approver_tab_number": "hr_001",
     "status": "approved",
     "assigned_at": "29.05.2026 19:05:05",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "29.05.2026 19:35:05",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -95.84
+    "duration_days": 0.02
   },
   {
     "id": 241,
@@ -2841,10 +2841,10 @@
     "approver_tab_number": "030",
     "status": "pending",
     "assigned_at": "01.06.2026 04:36:47",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "01.06.2026 05:06:47",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -98.23
+    "duration_days": 0.02
   },
   {
     "id": 250,
@@ -2854,10 +2854,10 @@
     "approver_tab_number": "hr_001",
     "status": "pending",
     "assigned_at": "01.06.2026 04:36:47",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "01.06.2026 05:06:47",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -98.23
+    "duration_days": 0.02
   },
   {
     "id": 251,
@@ -2945,10 +2945,10 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "01.06.2026 04:53:20",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "01.06.2026 05:23:20",
     "comment": "",
     "sla_days": 2,
-    "duration_days": -98.25
+    "duration_days": 0.02
   },
   {
     "id": 258,
@@ -2958,9 +2958,9 @@
     "approver_tab_number": null,
     "status": "approved",
     "assigned_at": "01.06.2026 04:53:20",
-    "acted_at": "22.02.2026 22:59:04",
+    "acted_at": "01.06.2026 05:23:20",
     "comment": "",
     "sla_days": 1,
-    "duration_days": -98.25
+    "duration_days": 0.02
   }
 ]
