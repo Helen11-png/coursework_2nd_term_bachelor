@@ -113,7 +113,9 @@ class Command(BaseCommand):
         req1 = Request.objects.create(
             employee=employee1,
             request_type='vacation',
-            status='submitted'
+            status='submitted',
+            start_date='2026-06-01',
+            end_date='2026-06-14'
         )
         req1.create_approval_steps()
         self.stdout.write(f"Создана заявка #{req1.id} (отпуск, {employee1.full_name})")
@@ -121,7 +123,9 @@ class Command(BaseCommand):
         req2 = Request.objects.create(
             employee=employee2,
             request_type='business_trip',
-            status='submitted'
+            status='submitted',
+            start_date='2026-06-10',
+            end_date='2026-06-15'
         )
         req2.create_approval_steps()
         self.stdout.write(f"Создана заявка #{req2.id} (командировка, {employee2.full_name})")
@@ -130,7 +134,9 @@ class Command(BaseCommand):
             employee=employee3,
             request_type='vacation',
             status='approved',
-            approved_at='2026-02-22 22:59:04'
+            approved_at='2026-02-22 22:59:04',
+            start_date='2026-02-10',
+            end_date='2026-02-20'
         )
         req3.create_approval_steps()
 

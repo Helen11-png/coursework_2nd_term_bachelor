@@ -1,6 +1,6 @@
 metric_name,value,unit,period
-avg_approval_days,-27.45,days,all_time
-total_requests,105,count,all_time
-approved_requests,24,count,all_time
-vacation_requests,66,count,all_time
-business_trip_requests,39,count,all_time
+avg_approval_days,-32.89,days,all_time
+total_requests,114,count,all_time
+approved_requests,26,count,all_time
+vacation_requests,72,count,all_time
+business_trip_requests,42,count,all_time
